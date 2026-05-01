@@ -1,0 +1,50 @@
+$bg-color:#FBFDFF;
+$safe-color: #1162A3;
+$danger-color:#FE1145;
+$text-color:#0E1A24;
+$hover-color:#D9D9D9;
+$border-color:#A4A4A4;
+$mail-color:#D4ECFF;
+$font:Verdana,sans-serif;
+/* variabler deklareres i toppen af vores stylesheet og de er globale.
+Variabler defineret i blokke ({}) er normalvis lokale og kan kun tilgås inde i blokken*/
+
+
+
+
+/*----------------Mixin------------------------*/
+
+
+@mixin linkBtn{
+    background-color: $bg-color;
+    padding: 0.5rem;
+    border: 2px solid $border-color;
+    border-radius: 5px;
+    color: $text-color;
+    text-decoration: none;  
+    text-align: center;
+    cursor: pointer;
+
+        &:hover{
+            background-color: $hover-color;
+        }
+}
+
+
+@mixin ul{
+    ul{list-style-type: none;
+    margin: 2rem 0;
+
+        li{color: $hover-color;
+        margin-bottom: 1rem;
+
+             i{margin-right: 0.5em;
+             }
+        
+        li:hover{
+            color: $text-color;
+        }
+    
+        }
+    }
+}

@@ -1,1 +1,9 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/*Mixin*/
+/* mixin er en måde at genbruge kode på. Vi kan tage kode der bruges flere steder og samle det i en mixin.*/
+body {
+  background-color: #c212aa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */

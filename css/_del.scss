@@ -6,8 +6,7 @@ $hover-color:#D9D9D9;
 $border-color:#A4A4A4;
 $mail-color:#D4ECFF;
 $font:Verdana,sans-serif;
-/* variabler deklareres i toppen af vores stylesheet og de er globale.
-Variabler defineret i blokke ({}) er normalvis lokale og kan kun tilgås inde i blokken*/
+/*---------------variabler---------------------*/
 
 
 
@@ -31,7 +30,7 @@ Variabler defineret i blokke ({}) er normalvis lokale og kan kun tilgås inde i 
 }
 
 
-@mixin ul{
+@mixin uls{
     ul{list-style-type: none;
     margin: 2rem 0;
 

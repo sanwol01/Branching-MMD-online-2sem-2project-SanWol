@@ -1,9 +1,170 @@
-@charset "UTF-8";
-/*Mixin*/
-/* mixin er en måde at genbruge kode på. Vi kan tage kode der bruges flere steder og samle det i en mixin.*/
-body {
-  background-color: #c212aa;
-  font-family: Arial, sans-serif;
+/*---------------variabler---------------------*/
+/*----------------Mixin------------------------*/
+* {
+  box-sizing: border-box;
   margin: 0;
-  padding: 20px;
+}
+
+body {
+  background-color: #FBFDFF;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #1162A3;
+  height: 5vh;
+}
+header ul ul {
+  list-style-type: none;
+  margin: 2rem 0;
+}
+header ul ul li {
+  color: #D9D9D9;
+  margin-bottom: 1rem;
+}
+header ul ul li i {
+  margin-right: 0.5em;
+}
+header ul ul li li:hover {
+  color: #0E1A24;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: #FBFDFF;
+}
+header ul li {
+  margin-left: 1rem;
+}
+header ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*------------ scene 0--------------*/
+.velkomst {
+  min-width: 400px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #FBFDFF;
+}
+.velkomst h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.velkomst p {
+  line-height: 1.8rem;
+  text-align: left;
+  margin-top: 2rem;
+}
+.velkomst a {
+  background-color: #FBFDFF;
+  padding: 0.5rem;
+  border: 2px solid #A4A4A4;
+  border-radius: 5px;
+  color: #0E1A24;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.velkomst a:hover {
+  background-color: #D9D9D9;
+}
+.velkomst a {
+  display: block;
+  width: 150px;
+  margin: 2rem auto;
+}
+
+/*------------ scene 1--------------*/
+.indbakke {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 180px 150px 250px 40px;
+  grid-template-areas: "indbakkeTekst indbakkeTekst" "logo logo" "mailnav mails" "footer footer";
+}
+.indbakke .indbakkeTekst {
+  grid-area: indbakkeTekst;
+  background-color: #FBFDFF;
+}
+.indbakke .indbakkeTekst p {
+  max-width: 600px;
+  margin: 3rem auto;
+}
+.indbakke .logo {
+  grid-area: logo;
+  background-color: #FBFDFF;
+  border: 3px solid #A4A4A4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.indbakke .logo img {
+  width: 70%;
+  height: auto;
+  margin-left: 1rem;
+}
+.indbakke .mailnav {
+  grid-area: mailnav;
+  border-right: 3px solid #A4A4A4;
+  border-left: 3px solid #A4A4A4;
+  padding-top: 2rem;
+}
+.indbakke .mailnav ul {
+  list-style-type: none;
+}
+.indbakke .mailnav ul li {
+  color: #A4A4A4;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.indbakke .mailnav ul li:hover {
+  color: #0E1A24;
+}
+.indbakke .mails {
+  grid-area: mails;
+}
+.indbakke .mails ul {
+  list-style-type: none;
+  margin: 2rem 0;
+}
+.indbakke .mails ul li {
+  color: #D9D9D9;
+  margin-bottom: 1rem;
+}
+.indbakke .mails ul li i {
+  margin-right: 0.5em;
+}
+.indbakke .mails ul li li:hover {
+  color: #0E1A24;
+}
+.indbakke .mails {
+  border-right: 3px solid #A4A4A4;
+}
+.indbakke .mails a {
+  margin-left: 2rem;
+}
+.indbakke .mails .dato {
+  margin-left: 2rem;
+}
+.indbakke .mails i {
+  color: #1162A3;
+}
+.indbakke .footer {
+  grid-area: footer;
+  background-color: #D4ECFF;
+  border: 3px solid #A4A4A4;
+}
+.indbakke .footer p {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

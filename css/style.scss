@@ -1,10 +1,161 @@
 @use 'del'; 
 
-body {
-  background-color: del.$bg-color;
-  font-family: Arial, sans-serif;
+*{
+  box-sizing: border-box;
   margin: 0;
-  padding: 20px;
 }
 
-@include del.flex; 
+body {
+  background-color: del.$bg-color;
+  font-family: del.$font;
+  margin: 0;
+}
+
+header{
+  background-color: del.$safe-color;
+  height: 5vh;
+
+    ul{
+      @include del.uls;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      color: del.$bg-color;
+      
+        li{
+          margin-left: 1rem;
+
+            a{
+              text-decoration: none;
+              font-weight: bold;
+              cursor: pointer; 
+            }
+        }
+    }
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*------------ scene 0--------------*/
+.velkomst{
+  min-width: 400px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  background-color: del.$bg-color;
+
+    h1{text-align: center;
+       margin-top: 2rem;
+      }
+
+    p{line-height: 1.8rem;
+    text-align: left; 
+    margin-top: 2rem;
+  }
+
+   a{@include del.linkBtn;
+    display: block;
+    width: 150px;
+    margin: 2rem auto;}
+
+}
+
+/*------------ scene 1--------------*/
+.indbakke{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 180px 150px 250px 40px;
+  grid-template-areas:
+  "indbakkeTekst indbakkeTekst"
+  "logo logo"
+  "mailnav mails"
+  "footer footer";
+
+
+    .indbakkeTekst{
+      grid-area: indbakkeTekst;
+      background-color: del.$bg-color;
+        p{
+          max-width: 600px;
+          margin: 3rem auto;
+        }
+    }
+
+    .logo{
+      grid-area: logo;
+      background-color: del.$bg-color;
+      border: 3px solid del.$border-color;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+        img{
+          width: 70%;
+          height: auto;
+          margin-left: 1rem;
+        }
+    }
+
+    .mailnav{
+      grid-area: mailnav;
+      border-right: 3px solid del.$border-color;
+      border-left: 3px solid del.$border-color;
+      padding-top: 2rem;
+
+          ul{
+            list-style-type: none;
+            
+              li{
+                color: del.$border-color;
+                margin-bottom: 1rem;
+                cursor: pointer;
+
+                &:hover{
+                  color: del.$text-color;
+                }
+              }
+          }
+
+        
+    }
+
+    .mails{
+      grid-area: mails;
+      @include del.uls;
+      border-right: 3px solid del.$border-color;
+
+        a{
+         margin-left: 2rem;
+         }
+        .dato{
+        margin-left: 2rem;
+         }
+         i{
+          color: del.$safe-color;
+         }
+
+    }
+
+    .footer{
+      grid-area: footer;
+      background-color: del.$mail-color;
+      border: 3px solid del.$border-color;
+
+        p{
+          text-align: center;
+        }
+    }
+
+
+    
+
+}
+
+
+

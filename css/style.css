@@ -141,6 +141,15 @@ img {
   border-right: 3px solid #A4A4A4;
 }
 .indbakke .mails a {
+  text-decoration: none;
+  color: #0E1A24;
+}
+.indbakke .mails a:hover {
+  color: #1162A3;
+  text-decoration-color: #1162A3;
+  text-decoration: underline;
+}
+.indbakke .mails .emne {
   margin-left: 2rem;
 }
 .indbakke .mails .dato {

@@ -135,7 +135,19 @@ img{
       border-right: 3px solid del.$border-color;
 
         a{
-         margin-left: 2rem;
+         text-decoration: none;
+         color: del.$text-color;
+
+          &:hover{
+            color: del.$safe-color;
+            text-decoration-color: del.$safe-color;
+            text-decoration: underline;
+          }
+
+
+         }
+         .emne{
+        margin-left: 2rem;
          }
         .dato{
         margin-left: 2rem;

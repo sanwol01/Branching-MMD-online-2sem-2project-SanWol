@@ -12,36 +12,25 @@ body {
 }
 
 header {
-  background-color: #1162A3;
-  height: 5vh;
-}
-header ul ul {
-  list-style-type: none;
-  margin: 2rem 0;
-}
-header ul ul li {
-  color: #D9D9D9;
-  margin-bottom: 1rem;
-}
-header ul ul li i {
-  margin-right: 0.5em;
-}
-header ul ul li li:hover {
-  color: #0E1A24;
+  background-color: #0E1A24;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 header ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  color: #FBFDFF;
 }
 header ul li {
-  margin-left: 1rem;
+  margin-right: 1.5rem;
+  list-style-type: none;
 }
 header ul li a {
   text-decoration: none;
-  font-weight: bold;
   cursor: pointer;
+  color: #FBFDFF;
 }
 
 img {
@@ -90,7 +79,7 @@ img {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 6fr;
-  grid-template-rows: 180px 150px 250px 40px;
+  grid-template-rows: 180px 130px 250px 40px;
   grid-template-areas: "indbakkeTekst indbakkeTekst" "logo logo" "mailnav mails" "footer footer";
 }
 .indbakke .indbakkeTekst {

@@ -31,8 +31,9 @@ $font:Verdana,sans-serif;
 
 
 @mixin uls{
+
     ul{list-style-type: none;
-    margin: 2rem 0;
+        margin: 2rem 0;
 
         li{color: $hover-color;
         margin-bottom: 1rem;

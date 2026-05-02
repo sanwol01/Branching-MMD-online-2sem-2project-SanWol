@@ -250,4 +250,21 @@ img {
   display: block;
   max-width: 250px;
   margin: 1rem auto;
+}
+.glsmail .mailcontent {
+  border-radius: 8px;
+}
+.glsmail .mailcontent a {
+  display: block;
+  margin: 1rem auto;
+}
+.glsmail .mailcontent ul {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.glsmail .mailcontent ul li {
+  color: #0519b0;
+  margin-right: 1rem;
+  list-style-type: none;
 }/*# sourceMappingURL=style.css.map */

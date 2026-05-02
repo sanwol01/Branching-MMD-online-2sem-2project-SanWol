@@ -266,7 +266,28 @@ img{
         }
     }
 
+    .mailcontent{
+      border-radius: 8px;
 
+
+        a{
+          display: block;
+          margin: 1rem auto;
+        }
+
+
+        ul{
+          display: flex;
+          justify-content: center;
+          margin: 1rem 0;
+
+            li{
+              color: del.$gls-color;
+              margin-right: 1rem;
+              list-style-type: none;
+            }
+        }
+    }
 
 }
 

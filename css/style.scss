@@ -49,6 +49,7 @@ img{
   min-width: 400px;
   max-width: 800px;
   margin: 0 auto;
+  display: none;
 
   background-color: del.$bg-color;
 
@@ -70,6 +71,7 @@ img{
 
 /*------------ scene 1--------------*/
 .indbakke{
+  display: none;
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -125,8 +127,7 @@ img{
                 }
               }
           }
-
-        
+ 
     }
 
     .mails{
@@ -162,16 +163,65 @@ img{
       grid-area: footer;
       background-color: del.$mail-color;
       border: 3px solid del.$border-color;
-
-        p{
-          text-align: center;
-        }
-    }
-
-
-    
+  }
 
 }
+
+/*------------ scene 2 --------------*/
+.glsmail{
+  
+
+    .valgtekst{
+      border:del.$border;
+
+        p{
+          line-height: 1.8rem;
+          margin-bottom: 2rem;
+        }
+
+        a{
+          @include del.linkBtn;
+          display: block;
+          width: 200px;
+          margin-bottom: 1rem;
+        }
+
+    }
+
+.seMail{
+
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "ikon afsender"
+  "ikon tidspunkt";
+
+    }  
+
+
+    .ikon{
+      grid-area: ikon;
+     
+ 
+    }
+
+    .afsender{
+      grid-area: afsender;
+      
+
+     }   
+
+    .tidspunkt{
+      grid-area: tidspunkt;
+  }
+
+}
+
+
+
 
 
 

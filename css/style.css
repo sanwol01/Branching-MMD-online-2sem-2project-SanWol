@@ -38,6 +38,96 @@ img {
   height: auto;
 }
 
+.info {
+  margin: 3rem auto;
+  padding-bottom: 3rem;
+  min-width: 400px;
+  max-width: 800px;
+  border-bottom: solid 1px #A4A4A4;
+}
+.info p {
+  text-align: left;
+}
+
+.seMail {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.seMail h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.seMail .mailinfo {
+  margin: 2rem auto 2rem 0.2rem;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "ikon afsender" "ikon tidspunkt";
+}
+
+.ikon {
+  grid-area: ikon;
+  font-size: 2rem;
+  color: #0519b0;
+}
+
+.afsender {
+  grid-area: afsender;
+}
+
+.tidspunkt {
+  grid-area: tidspunkt;
+  color: #A4A4A4;
+}
+
+.tekst {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.tekst .valgtekst {
+  border: solid 1px #A4A4A4;
+  border-radius: 8px;
+  max-width: 30%;
+  min-width: 250px;
+  height: 300px;
+  background-color: #D4ECFF;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 1rem;
+}
+.tekst .valgtekst p {
+  margin-bottom: 2rem;
+  max-width: 400px;
+  text-align: left;
+}
+.tekst .valgtekst a {
+  background-color: #FBFDFF;
+  padding: 0.5rem;
+  border: 2px solid #A4A4A4;
+  border-radius: 5px;
+  color: #0E1A24;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.tekst .valgtekst a:hover {
+  background-color: #D9D9D9;
+}
+.tekst .valgtekst a {
+  display: block;
+  max-width: 250px;
+  margin: 1rem auto;
+}
+
 /*------------ scene 0--------------*/
 .velkomst {
   min-width: 400px;
@@ -169,102 +259,163 @@ img {
 }
 
 /*------------ scene 2 --------------*/
-.glsmail .info {
-  margin: 3rem auto;
-  padding-bottom: 3rem;
-  min-width: 400px;
-  max-width: 800px;
-  border-bottom: solid 1px #A4A4A4;
-}
-.glsmail .info p {
-  text-align: left;
-}
-.glsmail .seMail {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.glsmail .seMail h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  white-space: nowrap;
-  /* overflow: hidden;*/
-  text-overflow: ellipsis;
-  display: block;
-}
-.glsmail .seMail .mailinfo {
-  margin: 2rem auto 2rem 0.2rem;
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "ikon afsender" "ikon tidspunkt";
-}
-.glsmail .ikon {
-  grid-area: ikon;
-  font-size: 2rem;
-  color: #0519b0;
-}
-.glsmail .afsender {
-  grid-area: afsender;
-}
-.glsmail .tidspunkt {
-  grid-area: tidspunkt;
-  color: #A4A4A4;
-}
-.glsmail .tekst {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-.glsmail .tekst .valgtekst {
-  border: solid 1px #A4A4A4;
-  border-radius: 8px;
-  max-width: 30%;
-  min-width: 250px;
-  height: 300px;
-  background-color: #D4ECFF;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 1rem;
-}
-.glsmail .tekst .valgtekst p {
-  line-height: 1.8rem;
-  margin-bottom: 2rem;
-}
-.glsmail .tekst .valgtekst a {
-  background-color: #FBFDFF;
-  padding: 0.5rem;
-  border: 2px solid #A4A4A4;
-  border-radius: 5px;
-  color: #0E1A24;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-}
-.glsmail .tekst .valgtekst a:hover {
-  background-color: #D9D9D9;
-}
-.glsmail .tekst .valgtekst a {
-  display: block;
-  max-width: 250px;
-  margin: 1rem auto;
+.glsmail {
+  /*  .info{
+      margin: 3rem auto;
+      padding-bottom: 3rem;
+      min-width: 400px;
+      max-width: 800px;
+      border-bottom: del.$border;
+
+        p{
+          text-align: left;
+        }
+    }
+
+    .seMail{
+
+      max-width: 1000px;
+      margin: 0 auto;
+
+
+        h2{
+          font-size: 1.2rem;
+          font-weight: bold;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: block;
+        }
+
+        .mailinfo{
+          margin: 2rem auto 2rem 0.2rem;
+          display: grid;
+          grid-template-columns: 50px 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-template-areas:
+          "ikon afsender"
+          "ikon tidspunkt";
+
+        }
+
+     }  
+
+
+        .ikon{
+          grid-area: ikon;
+          font-size: 2rem;
+          color: del.$gls-color;
+        }
+
+        .afsender{
+          grid-area: afsender;
+
+
+        }   
+
+        .tidspunkt{
+          grid-area: tidspunkt;
+          color: del.$border-color;
+      }
+
+
+    .tekst{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+
+
+        .valgtekst{
+          border:del.$border;
+          border-radius: 8px;
+          max-width: 30%;
+          min-width: 250px;
+          height: 300px;
+          background-color: del.$mail-color;
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          padding: 1rem;
+
+            p{
+              margin-bottom: 2rem;
+              max-width: 400px;
+              text-align: left;
+            }
+
+            a{
+              @include del.linkBtn;
+              display: block;
+              max-width: 250px;
+              margin: 1rem auto;
+            }
+
+        }
+    } */
 }
 .glsmail .mailcontent {
-  border-radius: 8px;
+  background-color: #D9D9D9;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
 }
-.glsmail .mailcontent a {
-  display: block;
+.glsmail .mailcontent .besked {
+  background-color: #FBFDFF;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  flex-direction: column;
+}
+.glsmail .mailcontent .besked p {
+  padding: 1rem 4rem;
+  text-align: left;
+}
+.glsmail .mailcontent .besked .glsboks {
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+.glsmail .mailcontent .besked a {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #FBFDFF;
+  background-color: #0519b0;
+  padding: 1rem;
+  border-radius: 50px;
   margin: 1rem auto;
 }
-.glsmail .mailcontent ul {
+.glsmail .mailcontent .besked ul {
   display: flex;
   justify-content: center;
   margin: 1rem 0;
 }
-.glsmail .mailcontent ul li {
+.glsmail .mailcontent .besked ul li {
   color: #0519b0;
   margin-right: 1rem;
   list-style-type: none;
+}
+.glsmail .mailcontent .besked .mailfooter {
+  font-size: 10px;
+  line-height: 0.3rem;
+  font-weight: lighter;
+  color: #A4A4A4;
+  display: block;
+  margin: 0.5rem auto;
+  border-top: solid 1px #A4A4A4;
+}
+.glsmail .mailcontent .besked .mailfooter p {
+  text-align: center;
+  white-space: nowrap;
 }/*# sourceMappingURL=style.css.map */

@@ -43,6 +43,103 @@ img{
   height: auto;
 }
 
+.info{
+      margin: 3rem auto;
+      padding-bottom: 3rem;
+      min-width: 400px;
+      max-width: 800px;
+      border-bottom: del.$border;
+
+        p{
+          text-align: left;
+        }
+    }
+  
+    .seMail{
+
+      max-width: 1000px;
+      margin: 0 auto;
+      
+
+        h2{
+          font-size: 1.2rem;
+          font-weight: bold;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: block;
+        }
+
+        .mailinfo{
+          margin: 2rem auto 2rem 0.2rem;
+          display: grid;
+          grid-template-columns: 50px 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-template-areas:
+          "ikon afsender"
+          "ikon tidspunkt";
+
+        }
+
+     }  
+
+
+        .ikon{
+          grid-area: ikon;
+          font-size: 2rem;
+          color: del.$gls-color;
+        }
+
+        .afsender{
+          grid-area: afsender;
+          
+
+        }   
+
+        .tidspunkt{
+          grid-area: tidspunkt;
+          color: del.$border-color;
+      }
+
+
+    .tekst{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+
+
+        .valgtekst{
+          border:del.$border;
+          border-radius: 8px;
+          max-width: 30%;
+          min-width: 250px;
+          height: 300px;
+          background-color: del.$mail-color;
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          padding: 1rem;
+
+            p{
+              margin-bottom: 2rem;
+              max-width: 400px;
+              text-align: left;
+            }
+
+            a{
+              @include del.linkBtn;
+              display: block;
+              max-width: 250px;
+              margin: 1rem auto;
+            }
+
+        }
+    }
+
+
 
 /*------------ scene 0--------------*/
 .velkomst{
@@ -172,7 +269,7 @@ img{
 /*------------ scene 2 --------------*/
 .glsmail{
 
-    .info{
+  /*  .info{
       margin: 3rem auto;
       padding-bottom: 3rem;
       min-width: 400px;
@@ -194,7 +291,7 @@ img{
           font-size: 1.2rem;
           font-weight: bold;
           white-space: nowrap;
-         /* overflow: hidden;*/
+          overflow: hidden;
           text-overflow: ellipsis;
           display: block;
         }
@@ -237,6 +334,7 @@ img{
       justify-content: space-around;
       align-items: center;
       margin-bottom: 2rem;
+      flex-wrap: wrap;
 
 
         .valgtekst{
@@ -252,8 +350,9 @@ img{
           padding: 1rem;
 
             p{
-              line-height: 1.8rem;
               margin-bottom: 2rem;
+              max-width: 400px;
+              text-align: left;
             }
 
             a{
@@ -264,29 +363,88 @@ img{
             }
 
         }
-    }
+    } */
 
     .mailcontent{
-      border-radius: 8px;
+      background-color: del.$hover-color;
+      margin-bottom: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
 
 
-        a{
-          display: block;
-          margin: 1rem auto;
-        }
+        .besked{
+          background-color: del.$bg-color;  
+          border-radius: 10px;
+           max-width: 800px;
+           margin: 0 auto 2rem auto;
+           display: flex;
+           justify-content: center;
+           align-items: space-around;
+           flex-direction: column;
 
 
-        ul{
-          display: flex;
-          justify-content: center;
-          margin: 1rem 0;
+            p{
+              padding: 1rem 4rem;
+              text-align: left;
+            } 
 
-            li{
-              color: del.$gls-color;
-              margin-right: 1rem;
-              list-style-type: none;
+
+            .glsboks{
+              margin: 1rem auto;
+              border-radius: 10px;
             }
+
+                
+            a{
+              max-width: fit-content;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-decoration: none;
+              color: del.$bg-color;
+              background-color: del.$gls-color;
+              padding: 1rem;
+              border-radius: 50px;
+              margin: 1rem auto;
+            }
+
+
+            ul{
+              display: flex;
+              justify-content: center;
+              margin: 1rem 0;
+
+                li{
+                  color: del.$gls-color;
+                  margin-right: 1rem;
+                  list-style-type: none;
+                }
+            }
+
+            .mailfooter{
+              font-size: 10px;
+              line-height: 0.3rem;
+              font-weight: lighter;
+              color: del.$border-color;
+              display: block;
+              margin: 0.5rem auto;
+              border-top: del.$border;
+
+              p{
+                text-align: center; 
+                white-space: nowrap;
+                 
+              }
+              
+            }
+
+
         }
+
+
     }
 
 }

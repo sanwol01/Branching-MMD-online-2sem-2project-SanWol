@@ -75,18 +75,6 @@ img{
         }
 
 
-        .skidtsvar{
-          color: del.$danger-color;  
-        }
-
-        .godtsvar{
-          color: del.$safe-color;  
-        }
-
-        .oksvar{
-          color: del.$border-color;  
-        }
-
         .mailinfo{
           margin: 2rem auto 2rem 0.2rem;
           display: grid;
@@ -99,6 +87,30 @@ img{
         }
 
      }  
+
+     
+        .skidtsvar{
+          color: del.$danger-color;  
+          text-align: center;
+        }
+
+        .godtsvar{
+          color: del.$safe-color;  
+          text-align: center;
+        }
+
+        .oksvar{
+          color: del.$border-color;  
+          text-align: center;
+        }
+
+        .morelink{
+          color: del.$text-color;
+
+           &:hover{
+            color: del.$safe-color;
+           } 
+        }
 
 
         .ikon{
@@ -405,35 +417,97 @@ display: none; /*---------------------------------------------------------------
 }
 
 /*------------ scene 3--------------*/
-.velkomst{
-  min-width: 400px;
-  max-width: 800px;
-  margin: 0 auto;
-  display: none;
+.glsmailispam{
+  @include del.resultatsection;
 
-  background-color: del.$bg-color;
-
-    h1{text-align: center;
-       margin-top: 2rem;
-      }
-
-    p{line-height: 1.8rem;
-    text-align: left; 
-    margin-top: 2rem;
-  }
-
-   a{@include del.linkBtn;
-    display: block;
-    width: 150px;
-    margin: 2rem auto;}
+    h2{
+      color: del.$safe-color;  
+          text-align: center;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+    }
+ display: none; /*-----------------------------------------------------------------------*/ 
 
 }
+
+/*------------ scene 4--------------*/
+.glsmailtjek{
+  @include del.resultatsection;
+   display: none; /*-----------------------------------------------------------------------*/ 
+
+    h2{
+      color: del.$border-color;  
+          text-align: center;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+    }
+
+
+}
+
+/*------------ scene 5--------------*/
+.glsmailhacket{
+  @include del.resultatsection;
+
+    h2{
+      color: del.$danger-color;  
+          text-align: center;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+    }
+
+
+}
+
+
 
 /*------------ scene 6--------------*/
 .tv2mail{
   
 
  display: none; /*-----------------------------------------------------------------------*/ 
+}
+
+/*------------ scene 7--------------*/
+.tv2ispam{
+  @include del.resultatsection;
+
+    h2{
+      color: del.$safe-color;  
+          text-align: center;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+    }
+
+
+}
+
+/*------------ scene 8--------------*/
+.tv2mailtjek{
+  @include del.resultatsection;
+
+    h2{
+      color: del.$border-color;  
+          text-align: center;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+    }
+
+
+}
+
+/*------------ scene 9--------------*/
+.tv2mailhacket{
+  @include del.resultatsection;
+
+    h2{
+      color: del.$danger-color;  
+          text-align: center;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+    }
+
+
 }
 
 /*------------ scene 10--------------*/
@@ -444,6 +518,48 @@ display: none; /*---------------------------------------------------------------
   
 }
 
+/*------------ scene 11--------------*/
+.mofibomailispam{
+  @include del.resultatsection;
+
+    h2{
+      color: del.$danger-color;  
+          text-align: center;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+    }
+
+
+}
+
+/*------------ scene 12--------------*/
+.mofibomailtjek{
+  @include del.resultatsection;
+
+    h2{
+      color: del.$border-color;  
+          text-align: center;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+    }
+
+
+}
+
+/*------------ scene 13--------------*/
+.glsmailtjek{
+  @include del.resultatsection;
+
+    h2{
+      color: del.$border-color;  
+          text-align: center;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+    }
+
+
+}
+
 /*------------ scene 14--------------*/
 .almbrandmail{
 
@@ -452,6 +568,47 @@ display: none; /*---------------------------------------------------------------
   
 }
 
+/*------------ scene 15--------------*/
+.glsmailtjek{
+  @include del.resultatsection;
+
+    h2{
+      color: del.$border-color;  
+          text-align: center;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+    }
+
+
+}
+
+/*------------ scene 16--------------*/
+.glsmailtjek{
+  @include del.resultatsection;
+
+    h2{
+      color: del.$border-color;  
+          text-align: center;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+    }
+
+
+}
+
+/*------------ scene 17--------------*/
+.glsmailtjek{
+  @include del.resultatsection;
+
+    h2{
+      color: del.$border-color;  
+          text-align: center;
+          margin-top: 1.2rem;
+          margin-bottom: 1.2rem;
+    }
+
+
+}
 
 
 

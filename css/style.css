@@ -40,7 +40,7 @@ img {
 }
 
 .resultat {
-  max-width: 800px;
+  max-width: 500px;
   min-width: 150px;
   height: auto;
   border-radius: 5px;
@@ -72,21 +72,34 @@ img {
   text-overflow: ellipsis;
   display: block;
 }
-.seMail .skidtsvar {
-  color: #FE1145;
-}
-.seMail .godtsvar {
-  color: #1162A3;
-}
-.seMail .oksvar {
-  color: #A4A4A4;
-}
 .seMail .mailinfo {
   margin: 2rem auto 2rem 0.2rem;
   display: grid;
   grid-template-columns: 50px 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "ikon afsender" "ikon tidspunkt";
+}
+
+.skidtsvar {
+  color: #FE1145;
+  text-align: center;
+}
+
+.godtsvar {
+  color: #1162A3;
+  text-align: center;
+}
+
+.oksvar {
+  color: #A4A4A4;
+  text-align: center;
+}
+
+.morelink {
+  color: #0E1A24;
+}
+.morelink:hover {
+  color: #1162A3;
 }
 
 .ikon {
@@ -375,39 +388,75 @@ img {
 }
 
 /*------------ scene 3--------------*/
-.velkomst {
-  min-width: 400px;
-  max-width: 800px;
+.glsmailispam {
+  min-width: 200px;
+  max-width: 500px;
   margin: 0 auto;
-  display: none;
-  background-color: #FBFDFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3rem;
 }
-.velkomst h1 {
+.glsmailispam p {
+  margin-bottom: 1.2rem;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+.glsmailispam h2 {
+  color: #1162A3;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }
-.velkomst p {
-  line-height: 1.8rem;
-  text-align: left;
-  margin-top: 2rem;
+.glsmailispam {
+  display: none; /*-----------------------------------------------------------------------*/
 }
-.velkomst a {
-  background-color: #FBFDFF;
-  padding: 0.5rem;
-  border: 2px solid #A4A4A4;
-  border-radius: 5px;
-  color: #0E1A24;
-  text-decoration: none;
+
+/*------------ scene 4--------------*/
+.glsmailtjek {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.glsmailtjek p {
+  margin-bottom: 1.2rem;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+.glsmailtjek {
+  display: none; /*-----------------------------------------------------------------------*/
+}
+.glsmailtjek h2 {
+  color: #A4A4A4;
   text-align: center;
-  cursor: pointer;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }
-.velkomst a:hover {
-  background-color: #D9D9D9;
+
+/*------------ scene 5--------------*/
+.glsmailhacket {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3rem;
 }
-.velkomst a {
-  display: block;
-  width: 150px;
-  margin: 2rem auto;
+.glsmailhacket p {
+  margin-bottom: 1.2rem;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+.glsmailhacket h2 {
+  color: #FE1145;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 /*------------ scene 6--------------*/
@@ -415,12 +464,210 @@ img {
   display: none; /*-----------------------------------------------------------------------*/
 }
 
+/*------------ scene 7--------------*/
+.tv2ispam {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.tv2ispam p {
+  margin-bottom: 1.2rem;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+.tv2ispam h2 {
+  color: #1162A3;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+/*------------ scene 8--------------*/
+.tv2mailtjek {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.tv2mailtjek p {
+  margin-bottom: 1.2rem;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+.tv2mailtjek h2 {
+  color: #A4A4A4;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+/*------------ scene 9--------------*/
+.tv2mailhacket {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.tv2mailhacket p {
+  margin-bottom: 1.2rem;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+.tv2mailhacket h2 {
+  color: #FE1145;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
 /*------------ scene 10--------------*/
 .mofibomail {
   display: none; /*-----------------------------------------------------------------------*/
 }
 
+/*------------ scene 11--------------*/
+.mofibomailispam {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.mofibomailispam p {
+  margin-bottom: 1.2rem;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+.mofibomailispam h2 {
+  color: #FE1145;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+/*------------ scene 12--------------*/
+.mofibomailtjek {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.mofibomailtjek p {
+  margin-bottom: 1.2rem;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+.mofibomailtjek h2 {
+  color: #A4A4A4;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+/*------------ scene 13--------------*/
+.glsmailtjek {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.glsmailtjek p {
+  margin-bottom: 1.2rem;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+.glsmailtjek h2 {
+  color: #A4A4A4;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
 /*------------ scene 14--------------*/
 .almbrandmail {
   display: none; /*-----------------------------------------------------------------------*/
+}
+
+/*------------ scene 15--------------*/
+.glsmailtjek {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.glsmailtjek p {
+  margin-bottom: 1.2rem;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+.glsmailtjek h2 {
+  color: #A4A4A4;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+/*------------ scene 16--------------*/
+.glsmailtjek {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.glsmailtjek p {
+  margin-bottom: 1.2rem;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+.glsmailtjek h2 {
+  color: #A4A4A4;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+/*------------ scene 17--------------*/
+.glsmailtjek {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.glsmailtjek p {
+  margin-bottom: 1.2rem;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+.glsmailtjek h2 {
+  color: #A4A4A4;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }/*# sourceMappingURL=style.css.map */

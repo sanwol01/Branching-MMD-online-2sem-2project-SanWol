@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*---------------variabler---------------------*/
 /*----------------Mixin------------------------*/
 * {
@@ -38,6 +39,16 @@ img {
   height: auto;
 }
 
+.resultat {
+  max-width: 800px;
+  min-width: 150px;
+  height: auto;
+  border-radius: 5px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 1.5rem auto;
+}
+
 .info {
   margin: 3rem auto;
   padding-bottom: 3rem;
@@ -60,6 +71,15 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
+}
+.seMail .skidtsvar {
+  color: #FE1145;
+}
+.seMail .godtsvar {
+  color: #1162A3;
+}
+.seMail .oksvar {
+  color: #A4A4A4;
 }
 .seMail .mailinfo {
   margin: 2rem auto 2rem 0.2rem;
@@ -126,6 +146,34 @@ img {
   display: block;
   max-width: 250px;
   margin: 1rem auto;
+}
+
+/*---------------kun for læs mere siden-----------------------*/
+.readmoremain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.readmoremain .moreinfo {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+.readmoremain .moreinfo h1 {
+  color: #1162A3;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 22px;
+}
+.readmoremain .moreinfo h2 {
+  color: #0E1A24;
+  font-size: 1.2rem;
+}
+.readmoremain .moreinfo p {
+  line-height: 1.8rem;
+  text-align: left;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 /*------------ scene 0--------------*/
@@ -259,103 +307,6 @@ img {
 }
 
 /*------------ scene 2 --------------*/
-.glsmail {
-  /*  .info{
-      margin: 3rem auto;
-      padding-bottom: 3rem;
-      min-width: 400px;
-      max-width: 800px;
-      border-bottom: del.$border;
-
-        p{
-          text-align: left;
-        }
-    }
-
-    .seMail{
-
-      max-width: 1000px;
-      margin: 0 auto;
-
-
-        h2{
-          font-size: 1.2rem;
-          font-weight: bold;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: block;
-        }
-
-        .mailinfo{
-          margin: 2rem auto 2rem 0.2rem;
-          display: grid;
-          grid-template-columns: 50px 1fr;
-          grid-template-rows: 1fr 1fr;
-          grid-template-areas:
-          "ikon afsender"
-          "ikon tidspunkt";
-
-        }
-
-     }  
-
-
-        .ikon{
-          grid-area: ikon;
-          font-size: 2rem;
-          color: del.$gls-color;
-        }
-
-        .afsender{
-          grid-area: afsender;
-
-
-        }   
-
-        .tidspunkt{
-          grid-area: tidspunkt;
-          color: del.$border-color;
-      }
-
-
-    .tekst{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-
-
-        .valgtekst{
-          border:del.$border;
-          border-radius: 8px;
-          max-width: 30%;
-          min-width: 250px;
-          height: 300px;
-          background-color: del.$mail-color;
-          display: flex;
-          justify-content: space-around;
-          flex-direction: column;
-          padding: 1rem;
-
-            p{
-              margin-bottom: 2rem;
-              max-width: 400px;
-              text-align: left;
-            }
-
-            a{
-              @include del.linkBtn;
-              display: block;
-              max-width: 250px;
-              margin: 1rem auto;
-            }
-
-        }
-    } */
-}
 .glsmail .mailcontent {
   background-color: #D9D9D9;
   margin-bottom: 3rem;
@@ -418,4 +369,58 @@ img {
 .glsmail .mailcontent .besked .mailfooter p {
   text-align: center;
   white-space: nowrap;
+}
+.glsmail {
+  display: none; /*-----------------------------------------------------------------------*/
+}
+
+/*------------ scene 3--------------*/
+.velkomst {
+  min-width: 400px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: none;
+  background-color: #FBFDFF;
+}
+.velkomst h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.velkomst p {
+  line-height: 1.8rem;
+  text-align: left;
+  margin-top: 2rem;
+}
+.velkomst a {
+  background-color: #FBFDFF;
+  padding: 0.5rem;
+  border: 2px solid #A4A4A4;
+  border-radius: 5px;
+  color: #0E1A24;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.velkomst a:hover {
+  background-color: #D9D9D9;
+}
+.velkomst a {
+  display: block;
+  width: 150px;
+  margin: 2rem auto;
+}
+
+/*------------ scene 6--------------*/
+.tv2mail {
+  display: none; /*-----------------------------------------------------------------------*/
+}
+
+/*------------ scene 10--------------*/
+.mofibomail {
+  display: none; /*-----------------------------------------------------------------------*/
+}
+
+/*------------ scene 14--------------*/
+.almbrandmail {
+  display: none; /*-----------------------------------------------------------------------*/
 }/*# sourceMappingURL=style.css.map */

@@ -271,6 +271,7 @@ img {
 }
 .indbakke .mails {
   grid-area: mails;
+  padding: 0.5rem;
 }
 .indbakke .mails ul {
   list-style-type: none;
@@ -288,29 +289,81 @@ img {
 }
 .indbakke .mails {
   border-right: 3px solid #A4A4A4;
-}
-.indbakke .mails .mail {
-  text-align: justify;
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "emneafsende emneemne emnedato" "glsafsender glsemne glsdato" "tv2afsender tv2emne tv2dato" "mofiboafsender mofiboemne mofibodato" "almafsender almemne almdato";
 }
 .indbakke .mails a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #0E1A24;
+  cursor: pointer;
 }
 .indbakke .mails a:hover {
   color: #1162A3;
-  text-decoration-color: #1162A3;
-  text-decoration: underline;
 }
-.indbakke .mails .emne {
-  margin-left: 2rem;
+.indbakke .mails .emneafsende {
+  grid-area: emneafsende;
 }
-.indbakke .mails .dato {
-  margin-left: 2rem;
+.indbakke .mails .emneemne {
+  grid-area: emneemne;
 }
-.indbakke .mails i {
-  color: #1162A3;
+.indbakke .mails .emnedato {
+  grid-area: emnedato;
 }
-.indbakke .footer {
+.indbakke .mails .glsafsender {
+  grid-area: glsafsender;
+}
+.indbakke .mails .glsafsender i {
+  color: #0519b0;
+}
+.indbakke .mails .glsemne {
+  grid-area: glsemne;
+}
+.indbakke .mails .glsdato {
+  grid-area: glsdato;
+}
+.indbakke .mails .tv2afsender {
+  grid-area: tv2afsender;
+}
+.indbakke .mails .tv2afsender i {
+  color: #f21b30;
+}
+.indbakke .mails .tv2emne {
+  grid-area: tv2emne;
+}
+.indbakke .mails .tv2dato {
+  grid-area: tv2dato;
+}
+.indbakke .mails .mofiboafsender {
+  grid-area: mofiboafsender;
+}
+.indbakke .mails .mofiboafsender i {
+  color: #ff5e29;
+}
+.indbakke .mails .mofiboemne {
+  grid-area: mofiboemne;
+}
+.indbakke .mails .mofibodato {
+  grid-area: mofibodato;
+}
+.indbakke .mails .almafsender {
+  grid-area: almafsender;
+}
+.indbakke .mails .almafsender i {
+  color: #00b8eb;
+}
+.indbakke .mails .almemne {
+  grid-area: almemne;
+}
+.indbakke .mails .almemne .almdato {
+  grid-area: almdato;
+}
+.indbakke .mails .almemne .fed {
+  font-weight: bolder;
+  color: #A4A4A4;
+}
+.indbakke .mails .footer {
   grid-area: footer;
   background-color: #D4ECFF;
   border: 3px solid #A4A4A4;

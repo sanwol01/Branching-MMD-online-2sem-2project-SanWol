@@ -8,7 +8,7 @@
 
 body {
   background-color: #FBFDFF;
-  font-family: Verdana, sans-serif;
+  font-family: "Verdana", sans-serif;
   margin: 0;
 }
 
@@ -580,7 +580,7 @@ img {
 }
 
 /*------------ scene 13--------------*/
-.glsmailtjek {
+.mofibomailsand {
   min-width: 200px;
   max-width: 500px;
   margin: 0 auto;
@@ -589,13 +589,13 @@ img {
   justify-content: center;
   padding-bottom: 3rem;
 }
-.glsmailtjek p {
+.mofibomailsand p {
   margin-bottom: 1.2rem;
   padding: 0 0.5rem;
   line-height: 1.5rem;
 }
-.glsmailtjek h2 {
-  color: #A4A4A4;
+.mofibomailsand h2 {
+  color: #1162A3;
   text-align: center;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
@@ -607,7 +607,7 @@ img {
 }
 
 /*------------ scene 15--------------*/
-.glsmailtjek {
+.almbrandmailispam {
   min-width: 200px;
   max-width: 500px;
   margin: 0 auto;
@@ -616,20 +616,20 @@ img {
   justify-content: center;
   padding-bottom: 3rem;
 }
-.glsmailtjek p {
+.almbrandmailispam p {
   margin-bottom: 1.2rem;
   padding: 0 0.5rem;
   line-height: 1.5rem;
 }
-.glsmailtjek h2 {
-  color: #A4A4A4;
+.almbrandmailispam h2 {
+  color: #FE1145;
   text-align: center;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
 
 /*------------ scene 16--------------*/
-.glsmailtjek {
+.almenbrandmailtjek {
   min-width: 200px;
   max-width: 500px;
   margin: 0 auto;
@@ -638,12 +638,12 @@ img {
   justify-content: center;
   padding-bottom: 3rem;
 }
-.glsmailtjek p {
+.almenbrandmailtjek p {
   margin-bottom: 1.2rem;
   padding: 0 0.5rem;
   line-height: 1.5rem;
 }
-.glsmailtjek h2 {
+.almenbrandmailtjek h2 {
   color: #A4A4A4;
   text-align: center;
   margin-top: 1.2rem;
@@ -651,7 +651,7 @@ img {
 }
 
 /*------------ scene 17--------------*/
-.glsmailtjek {
+.almenbrandmailsand {
   min-width: 200px;
   max-width: 500px;
   margin: 0 auto;
@@ -660,13 +660,13 @@ img {
   justify-content: center;
   padding-bottom: 3rem;
 }
-.glsmailtjek p {
+.almenbrandmailsand p {
   margin-bottom: 1.2rem;
   padding: 0 0.5rem;
   line-height: 1.5rem;
 }
-.glsmailtjek h2 {
-  color: #A4A4A4;
+.almenbrandmailsand h2 {
+  color: #1162A3;
   text-align: center;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;

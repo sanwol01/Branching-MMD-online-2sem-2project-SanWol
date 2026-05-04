@@ -547,11 +547,11 @@ display: none; /*---------------------------------------------------------------
 }
 
 /*------------ scene 13--------------*/
-.glsmailtjek{
+.mofibomailsand{
   @include del.resultatsection;
 
     h2{
-      color: del.$border-color;  
+      color: del.$safe-color;  
           text-align: center;
           margin-top: 1.2rem;
           margin-bottom: 1.2rem;
@@ -569,11 +569,11 @@ display: none; /*---------------------------------------------------------------
 }
 
 /*------------ scene 15--------------*/
-.glsmailtjek{
+.almbrandmailispam{
   @include del.resultatsection;
 
     h2{
-      color: del.$border-color;  
+      color: del.$danger-color;  
           text-align: center;
           margin-top: 1.2rem;
           margin-bottom: 1.2rem;
@@ -583,7 +583,7 @@ display: none; /*---------------------------------------------------------------
 }
 
 /*------------ scene 16--------------*/
-.glsmailtjek{
+.almenbrandmailtjek{
   @include del.resultatsection;
 
     h2{
@@ -597,11 +597,11 @@ display: none; /*---------------------------------------------------------------
 }
 
 /*------------ scene 17--------------*/
-.glsmailtjek{
+.almenbrandmailsand{
   @include del.resultatsection;
 
     h2{
-      color: del.$border-color;  
+      color: del.$safe-color;  
           text-align: center;
           margin-top: 1.2rem;
           margin-bottom: 1.2rem;

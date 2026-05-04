@@ -265,12 +265,9 @@ img {
   list-style-type: none;
 }
 .indbakke .mailnav ul li {
-  color: #A4A4A4;
+  color: #0E1A24;
   margin-bottom: 1rem;
   cursor: pointer;
-}
-.indbakke .mailnav ul li:hover {
-  color: #0E1A24;
 }
 .indbakke .mails {
   grid-area: mails;
@@ -280,7 +277,7 @@ img {
   margin: 2rem 0;
 }
 .indbakke .mails ul li {
-  color: #D9D9D9;
+  color: #0E1A24;
   margin-bottom: 1rem;
 }
 .indbakke .mails ul li i {
@@ -291,6 +288,9 @@ img {
 }
 .indbakke .mails {
   border-right: 3px solid #A4A4A4;
+}
+.indbakke .mails .mail {
+  text-align: justify;
 }
 .indbakke .mails a {
   text-decoration: none;

@@ -280,13 +280,10 @@ img{
             list-style-type: none;
             
               li{
-                color: del.$border-color;
+                color: del.$text-color;
                 margin-bottom: 1rem;
                 cursor: pointer;
 
-                &:hover{
-                  color: del.$text-color;
-                }
               }
           }
  
@@ -296,6 +293,10 @@ img{
       grid-area: mails;
       @include del.uls;
       border-right: 3px solid del.$border-color;
+
+        .mail{
+          text-align: justify;
+        }
 
         a{
          text-decoration: none;

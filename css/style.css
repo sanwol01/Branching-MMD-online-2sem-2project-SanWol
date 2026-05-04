@@ -315,9 +315,6 @@ img {
   background-color: #D4ECFF;
   border: 3px solid #A4A4A4;
 }
-.indbakke {
-  display: none;
-}
 
 /*------------ scene 2 --------------*/
 .glsmail .mailcontent {
@@ -436,6 +433,9 @@ img {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
+.glsmailtjek {
+  display: none; /*-----------------------------------------------------------------------*/
+}
 
 /*------------ scene 5--------------*/
 .glsmailhacket {
@@ -457,6 +457,9 @@ img {
   text-align: center;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
+}
+.glsmailhacket {
+  display: none; /*-----------------------------------------------------------------------*/
 }
 
 /*------------ scene 6--------------*/
@@ -485,6 +488,9 @@ img {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
+.tv2ispam {
+  display: none; /*-----------------------------------------------------------------------*/
+}
 
 /*------------ scene 8--------------*/
 .tv2mailtjek {
@@ -507,6 +513,9 @@ img {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
+.tv2mailtjek {
+  display: none; /*-----------------------------------------------------------------------*/
+}
 
 /*------------ scene 9--------------*/
 .tv2mailhacket {
@@ -528,6 +537,9 @@ img {
   text-align: center;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
+}
+.tv2mailhacket {
+  display: none; /*-----------------------------------------------------------------------*/
 }
 
 /*------------ scene 10--------------*/
@@ -556,6 +568,9 @@ img {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
+.mofibomailispam {
+  display: none; /*-----------------------------------------------------------------------*/
+}
 
 /*------------ scene 12--------------*/
 .mofibomailtjek {
@@ -578,6 +593,9 @@ img {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
+.mofibomailtjek {
+  display: none; /*-----------------------------------------------------------------------*/
+}
 
 /*------------ scene 13--------------*/
 .mofibomailsand {
@@ -599,6 +617,9 @@ img {
   text-align: center;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
+}
+.mofibomailsand {
+  display: none; /*-----------------------------------------------------------------------*/
 }
 
 /*------------ scene 14--------------*/
@@ -627,6 +648,9 @@ img {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
+.almbrandmailispam {
+  display: none; /*-----------------------------------------------------------------------*/
+}
 
 /*------------ scene 16--------------*/
 .almenbrandmailtjek {
@@ -649,6 +673,9 @@ img {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
+.almenbrandmailtjek {
+  display: none; /*-----------------------------------------------------------------------*/
+}
 
 /*------------ scene 17--------------*/
 .almenbrandmailsand {
@@ -670,4 +697,7 @@ img {
   text-align: center;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
+}
+.almenbrandmailsand {
+  display: none; /*-----------------------------------------------------------------------*/
 }/*# sourceMappingURL=style.css.map */

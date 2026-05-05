@@ -105,7 +105,14 @@ img {
 .ikon {
   grid-area: ikon;
   font-size: 2rem;
+}
+
+#glsi {
   color: #0519b0;
+}
+
+#tv2i {
+  color: #f21b30;
 }
 
 .afsender {
@@ -240,7 +247,7 @@ img {
 }
 .indbakke .indbakkeTekst p {
   max-width: 600px;
-  margin: 3rem auto;
+  margin: 3rem auto 0 auto;
 }
 .indbakke .logo {
   grid-area: logo;
@@ -302,6 +309,10 @@ img {
 .indbakke .mails a:hover {
   color: #1162A3;
 }
+.indbakke .mails .fed {
+  font-weight: bolder;
+  color: #A4A4A4;
+}
 .indbakke .mails .emneafsende {
   grid-area: emneafsende;
 }
@@ -313,6 +324,7 @@ img {
 }
 .indbakke .mails .glsafsender {
   grid-area: glsafsender;
+  cursor: pointer;
 }
 .indbakke .mails .glsafsender i {
   color: #0519b0;
@@ -325,6 +337,7 @@ img {
 }
 .indbakke .mails .tv2afsender {
   grid-area: tv2afsender;
+  cursor: pointer;
 }
 .indbakke .mails .tv2afsender i {
   color: #f21b30;
@@ -337,6 +350,7 @@ img {
 }
 .indbakke .mails .mofiboafsender {
   grid-area: mofiboafsender;
+  cursor: pointer;
 }
 .indbakke .mails .mofiboafsender i {
   color: #ff5e29;
@@ -349,6 +363,7 @@ img {
 }
 .indbakke .mails .almafsender {
   grid-area: almafsender;
+  cursor: pointer;
 }
 .indbakke .mails .almafsender i {
   color: #00b8eb;
@@ -359,14 +374,13 @@ img {
 .indbakke .mails .almemne .almdato {
   grid-area: almdato;
 }
-.indbakke .mails .almemne .fed {
-  font-weight: bolder;
-  color: #A4A4A4;
-}
-.indbakke .mails .footer {
+.indbakke .footer {
   grid-area: footer;
   background-color: #D4ECFF;
   border: 3px solid #A4A4A4;
+}
+.indbakke {
+  display: none; /*-----------------------------------------------------------------------*/
 }
 
 /*------------ scene 2 --------------*/
@@ -516,8 +530,86 @@ img {
 }
 
 /*------------ scene 6--------------*/
-.tv2mail {
-  display: none; /*-----------------------------------------------------------------------*/
+.tv2mail .tv2mailcontent {
+  background-color: #FBFDFF;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+.tv2mail .tv2mailcontent h2 {
+  color: #f21b30;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+.tv2mail .tv2mailcontent h3 {
+  color: #0E1A24;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin: 1rem auto;
+}
+.tv2mail .tv2mailcontent .tv2mailtext {
+  background-color: #f7f9fa;
+  padding: 0.5rem;
+  max-width: 1000px;
+  margin: 0.8rem auto 3rem auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.tv2mail .tv2mailcontent .tv2mailtext .tv2budskab {
+  border-top: 0.5px solid #0E1A24;
+  margin-top: 0.5rem;
+  max-width: 700px;
+  padding: 0.5rem;
+}
+.tv2mail .tv2mailcontent .tv2mailtext p {
+  padding: 1rem 4rem;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.8rem;
+}
+.tv2mail .tv2mailcontent .tv2mailtext a {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #FBFDFF;
+  background-color: #f21b30;
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin: 1rem auto;
+  font-weight: bolder;
+}
+.tv2mail .tv2mailcontent .tv2mailtext ul {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.tv2mail .tv2mailcontent .tv2mailtext ul li {
+  color: #0519b0;
+  margin-right: 1rem;
+  list-style-type: none;
+}
+.tv2mail .tv2mailcontent .tv2mailtext .mailfooter {
+  font-size: 10px;
+  line-height: 0.3rem;
+  font-weight: lighter;
+  color: #A4A4A4;
+  display: block;
+  margin: 0.5rem auto;
+  border-top: solid 1px #A4A4A4;
+}
+.tv2mail .tv2mailcontent .tv2mailtext .mailfooter p {
+  text-align: center;
+  white-space: nowrap;
 }
 
 /*------------ scene 7--------------*/

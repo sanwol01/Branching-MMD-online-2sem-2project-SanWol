@@ -116,8 +116,15 @@ img{
         .ikon{
           grid-area: ikon;
           font-size: 2rem;
-          color: del.$gls-color;
         }
+
+        #glsi{
+            color: del.$gls-color;
+          }
+
+        #tv2i{
+            color: del.$tv2-color;
+          }
 
         .afsender{
           grid-area: afsender;
@@ -251,7 +258,7 @@ img{
       background-color: del.$bg-color;
         p{
           max-width: 600px;
-          margin: 3rem auto;
+          margin: 3rem auto 0 auto;
         }
     }
 
@@ -308,6 +315,11 @@ img{
              @include del.atag;
           }
 
+          .fed{
+            font-weight: bolder;
+            color: del.$border-color;
+          }
+
           .emneafsende{
             grid-area: emneafsende;
           }
@@ -323,6 +335,7 @@ img{
 
           .glsafsender{
             grid-area: glsafsender;
+            cursor: pointer;
               i{color: del.$gls-color;}
           }
 
@@ -335,7 +348,8 @@ img{
           }
 
           .tv2afsender{
-            grid-area: tv2afsender;
+            grid-area: tv2afsender;    
+            cursor: pointer;
               i{color: del.$tv2-color;}
 
           }
@@ -350,7 +364,10 @@ img{
 
           .mofiboafsender{
             grid-area: mofiboafsender;
-              i{color: del.$mofibo-color;}
+            cursor: pointer;
+            
+              i{
+                color: del.$mofibo-color;}
           }
 
           .mofiboemne{
@@ -363,6 +380,7 @@ img{
 
           .almafsender{
             grid-area: almafsender;
+            cursor: pointer;
               i{color: del.$almbrand-color;}
           }
 
@@ -372,22 +390,20 @@ img{
           .almdato{
             grid-area: almdato;
           }
+     
+    }
 
-          .fed{
-            font-weight: bolder;
-            color: del.$border-color;
-          }
-    } 
+    
+  
 
-    .footer{
+  }
+
+  .footer{
       grid-area: footer;
       background-color: del.$mail-color;
       border: 3px solid del.$border-color;
   }
-
-  
-
-}
+display: none; /*-----------------------------------------------------------------------*/
 
 }
 
@@ -526,9 +542,109 @@ display: none; /*---------------------------------------------------------------
 
 /*------------ scene 6--------------*/
 .tv2mail{
-  
 
- display: none; /*-----------------------------------------------------------------------*/ 
+      .tv2mailcontent{
+        background-color: del.$bg-color;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+
+          
+          h2{
+            color: del.$tv2-color;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 3rem;
+          }
+          
+          h3{
+            color: del.$text-color;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+            margin: 1rem auto;
+          }
+
+          .tv2mailtext{
+            background-color: #f7f9fa;  
+            padding: 0.5rem;
+            max-width: 1000px;
+            margin: 0.8rem auto 3rem auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+              .tv2budskab{
+                
+                border-top: 0.5px solid del.$text-color;
+                margin-top: 0.5rem;
+                max-width: 700px;
+                padding: 0.5rem;
+              }
+
+
+
+              p{
+                padding: 1rem 4rem;
+                font-size: 12px;
+                text-align: center;
+                line-height: 1.8rem;
+              } 
+
+
+                  
+              a{
+                max-width: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: del.$bg-color;
+                background-color: del.$tv2-color;
+                padding: 0.8rem;
+                border-radius: 5px;
+                margin: 1rem auto;
+                font-weight: bolder;
+              }
+
+
+              ul{
+                display: flex;
+                justify-content: center;
+                margin: 1rem 0;
+
+                  li{
+                    color: del.$gls-color;
+                    margin-right: 1rem;
+                    list-style-type: none;
+                  }
+              }
+
+              .mailfooter{
+                font-size: 10px;
+                line-height: 0.3rem;
+                font-weight: lighter;
+                color: del.$border-color;
+                display: block;
+                margin: 0.5rem auto;
+                border-top: del.$border;
+
+                p{
+                  text-align: center; 
+                  white-space: nowrap;    
+                }
+                
+              }
+
+          }
+
+          
+
+      }
 }
 
 /*------------ scene 7--------------*/

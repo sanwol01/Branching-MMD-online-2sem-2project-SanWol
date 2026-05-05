@@ -116,6 +116,7 @@ img{
         .ikon{
           grid-area: ikon;
           font-size: 2rem;
+ 
         }
 
         #glsi{
@@ -130,12 +131,15 @@ img{
             color: del.$mofibo-color;
           }
 
-        #almi{
+        #almbi{
             color: del.$almbrand-color;
           }
 
         .afsender{
           grid-area: afsender;
+          
+            p{cursor: pointer;}
+         
           
 
         }   
@@ -159,16 +163,17 @@ img{
           border:del.$border;
           border-radius: 8px;
           max-width: 30%;
-          min-width: 250px;
-          height: 300px;
+          min-width: 230px;
+          height: 320px;
           background-color: del.$mail-color;
           display: flex;
           justify-content: space-around;
           flex-direction: column;
-          padding: 1rem;
+          padding: 1rem 1rem 0.2rem 1rem;
+          margin-bottom: 1rem;
 
             p{
-              margin-bottom: 2rem;
+              margin-bottom: 0.5rem;
               max-width: 400px;
               text-align: left;
             }
@@ -774,6 +779,7 @@ display: none; /*---------------------------------------------------------------
           }
 
   }
+  display: none; /*-----------------------------------------------------------------------*/ 
 
 }
 
@@ -825,9 +831,61 @@ display: none; /*---------------------------------------------------------------
 
 /*------------ scene 14--------------*/
 .almbrandmail{
+  
+
+    .almmailcontent{
+      font-family: del.$almbrand-font;
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
 
 
- display: none; /*-----------------------------------------------------------------------*/ 
+        h2{font-size: 1rem;
+          font-weight: bold}
+
+
+        h3{
+          font-size: 1rem;
+          font-weight: bold;
+          font-style: italic;
+          margin-top: 1rem;
+        }
+
+        p{line-height: 1.3rem;
+        margin-bottom: 2rem;}
+
+        a{
+          text-decoration: none
+        }
+
+        .playstoreimg{
+          max-height: 3rem;
+          display: block;
+          cursor: pointer;
+         
+        }
+
+        .almlogoimg{
+          max-height: 5rem;
+          display: block;
+          cursor: pointer;
+        }
+
+        .almmailfooter{
+          margin-top: 2rem;
+
+            p{
+              font-size: 0.8rem;
+            }
+
+
+        }
+
+    }
+  
+
+
+
   
 }
 

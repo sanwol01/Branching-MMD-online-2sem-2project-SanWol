@@ -115,6 +115,14 @@ img {
   color: #f21b30;
 }
 
+#mofiboi {
+  color: #ff5e29;
+}
+
+#almi {
+  color: #00b8eb;
+}
+
 .afsender {
   grid-area: afsender;
 }
@@ -611,6 +619,9 @@ img {
   text-align: center;
   white-space: nowrap;
 }
+.tv2mail {
+  display: none; /*-----------------------------------------------------------------------*/
+}
 
 /*------------ scene 7--------------*/
 .tv2ispam {
@@ -688,8 +699,67 @@ img {
 }
 
 /*------------ scene 10--------------*/
-.mofibomail {
-  display: none; /*-----------------------------------------------------------------------*/
+.mofibomail .mofibomailcontent {
+  background-color: #fffbfa;
+  margin: 0 auto 3rem auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 500px;
+}
+.mofibomail .mofibomailcontent img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mofibomail .mofibomailcontent p {
+  padding: 0.5rem 2rem;
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.2rem;
+}
+.mofibomail .mofibomailcontent h2 {
+  color: #ff5e29;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.7rem;
+  padding: 0.5rem 2rem;
+}
+.mofibomail .mofibomailcontent .mofiboknap {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px auto 20px 30px;
+  text-decoration: none;
+  color: #FBFDFF;
+  background-color: #000;
+  padding: 0.8rem;
+  border-radius: 50px;
+  font-weight: bold;
+}
+.mofibomail .mofibomailcontent .mofibomailfooter {
+  max-width: 500px;
+  min-height: 100px;
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+  background-color: black;
+  display: block;
+  margin: 0.5rem auto;
+}
+.mofibomail .mofibomailcontent .mofibomailfooter p {
+  text-align: center;
+  white-space: nowrap;
+}
+.mofibomail .mofibomailcontent .mofibomailfooter .biggerp {
+  font-size: 1rem;
+  padding-top: 1.3rem;
+}
+.mofibomail .mofibomailcontent .mofibomailfooter a {
+  text-decoration: underline;
+  color: white;
 }
 
 /*------------ scene 11--------------*/

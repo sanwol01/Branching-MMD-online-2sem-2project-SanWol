@@ -97,6 +97,7 @@ img{
           "ikon tidspunkt";
 
         }
+  
 
      }  
 
@@ -151,9 +152,7 @@ img{
           grid-area: afsender;
           
             p{cursor: pointer;}
-         
-          
-
+        
         }   
 
         .tidspunkt{
@@ -221,6 +220,13 @@ img{
     h2{
       color: del.$text-color;
       font-size: 1.2rem;
+    }
+
+    .underoverskrift{
+      color: del.$danger-color;
+      font-size: 1rem;
+      text-align: center;
+      margin: 1rem 0;
     }
 
     p{
@@ -311,10 +317,13 @@ img{
             list-style-type: none;
             
               li{
-                color: del.$text-color;
+                color: del.$border-color;
                 margin-bottom: 1rem;
                 cursor: pointer;
 
+                span{
+                  text-decoration: underline;
+                  color: del.$text-color;}
               }
           }
  

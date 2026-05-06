@@ -213,6 +213,12 @@ img {
   color: #0E1A24;
   font-size: 1.2rem;
 }
+.readmoremain .moreinfo .underoverskrift {
+  color: #FE1145;
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
 .readmoremain .moreinfo p {
   line-height: 1.8rem;
   text-align: left;
@@ -295,9 +301,13 @@ img {
   list-style-type: none;
 }
 .indbakke .mailnav ul li {
-  color: #0E1A24;
+  color: #A4A4A4;
   margin-bottom: 1rem;
   cursor: pointer;
+}
+.indbakke .mailnav ul li span {
+  text-decoration: underline;
+  color: #0E1A24;
 }
 .indbakke .mails {
   grid-area: mails;

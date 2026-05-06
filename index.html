@@ -20,20 +20,23 @@
 
    <main>
 <!------------------------------- scener --------------------------------------------->
-    <section class="scene velkomst"> <!-- scene 0 -->
-        <h1>Spot et phishingforsøg!</h1>
-        <p>Phishing er et udbredt fænomen, og hvis du har en mail adresse, har du garanteret også modtaget en mail med phishing forsøg. Før i tiden var det lettere at gennemskue et phishingforsøg. Der var tydelige tegn på at mail var falsk. F.eks var teksten ofte fyldt med overdreven mange stavefejl eller sætningerne var ikke korrekt formuleret, og generelt så meget af indholdet uprofessionelt ud.</p>
-        <p>I dag er historien en anden, og på trods af at vores SPAM-filter er blevet bedre, er de cyberkriminelle også blevet dygtigere.</p>
-        <p> Konsekvenserne af at blive hacket kan være mange og alvorlige, og kan ramme, ikke kun dig selv, men venner og familie, din arbejdsplads og skole. 
-            Det er derfor vigtigt at du har et skarpt øje på, hvad der lander i din indbakke.
-        </p>
-        <p>I det følgende vil du finde et indbakke-agtigt scenario. Mailsne er inspirerede af virkelige beskeder, og du har nu mulighed for at se om du er skarp nok til at spotte de rigtige mails fra phishingforsøgene. Tryk på start for at  komme i gang. </p>
-        <a href="#" class="valg">Start</a>
+    
+        <div class="aktiv">
+            <section class="velkomst"> <!-- scene 0 -->
+                <h1>Spot et phishingforsøg!</h1>
+                <p>Phishing er et udbredt fænomen, og hvis du har en e-mailadresse, har du garanteret også modtaget en mail med phishing forsøg. Før i tiden var det lettere at gennemskue et phishingforsøg. Der var tydelige tegn på at mailen var falsk. F.eks var teksten ofte fyldt med overdreven mange stavefejl eller sætningerne var ikke korrekt formuleret, og generelt så meget af indholdet uprofessionelt ud.</p>
+                <p>I dag er historien en anden, og på trods af at vores SPAM-filter er blevet bedre, er de cyberkriminelle også blevet dygtigere.</p>
+                <p> Konsekvenserne af at blive hacket kan være mange og alvorlige, og kan ramme, ikke kun dig selv, men venner og familie, din arbejdsplads og skole. 
+                    Det er derfor vigtigt at du har et skarpt øje på, hvad der lander i din indbakke.
+                </p>
+                <p>I det følgende vil du finde et indbakke-agtigt scenario. Mailsne er inspirerede af virkelige beskeder, og du har nu mulighed for at se om du er skarp nok til at spotte de rigtige mails, fra phishingforsøgene. Tryk på start for at  komme i gang. </p>
+                <a href="#" class="valg">Start</a>
 
-    </section>
+            </section>
+        </div>
 
-
-    <section class="scene indbakke"> <!-- index 1 -->
+        <div class="scene"> 
+            <section class="scene indbakke"> <!-- index 1 -->
 
         <div class="indbakkeTekst">
             <p>Her ser du en indbakke med 4 mails, vælg en mail ved at trykke på den, og se om du kan vudere om det er et phishing forsøg.</p>
@@ -56,18 +59,6 @@
             </nav>
         </div>
         <div class="mails">
-            <!--
-            <ul>
-                <li class="mail"><a class="valg" href="#"><i class="fa-solid fa-circle-user"></i><span title="info.sapindiacareer@mail.com">GLS DENMARK A/S</span><span class="emne" >GLS-leveringsundtagelse - svar venligst</span><span class="dato">19.04.26</span></a></li>
-
-                <li class="mail"><a class="valg" href="#"><i class="fa-solid fa-circle-user"></i><span title="argsen@zohonmail.eu">TV2 Play</span><span class="emne" >Opdater dine betaingsoplysninger for...</span><span class="dato">14.04.26</span></a></li>
-
-
-                <li class="mail"><a class="valg" href="#"><i class="fa-solid fa-circle-user"></i><span title="info.sapindiacareer@mail.com">MOFIBO</span><span class="emne" >Dit Abonnoment kunne ikke fornyes op...</span><span class="dato">19.04.26</span></a></li>
-
-                <li class="mail"><a class="valg" href="#"><i class="fa-solid fa-circle-user"></i><span title="info.sapindiacareer@mail.com">Alm. Brand </span><span class="emne" >Dit køretøj er ikke længere ansvarsf...</span><span class="dato">19.04.26</span></a></li>
-            </ul>
-            -->
             <div class="emneafsender fed"><p>Afsender</p></div>
             <div class="emneemne fed"><p>Emne</p></div>
             <div class="emnedato fed"><p>Dato</p></div>
@@ -83,17 +74,17 @@
             <div class="almafsender"><i class="fa-solid fa-circle-user"></i><span title="kundecenter.erhverv@almbrand.dk">Alm. Brand </span></div>
             <div class="almemne"><a href="#" class="valg">Dit køretøj er ikke længere ansvarsforsikret</a></div>
             <div class="almdato"><p>15.04.26</p></div>
-
-
-
         </div>
 
         <div class="footer"></div>
 
     </section>
 
+        </div>
 
-    <section class="scene glsmail"><!-- index 2 -->
+
+        <div class="scene">
+            <section class="glsmail"><!-- index 2 -->
 
         <div class="info">
             <p>Prøv at undesøge mailen nedenunder lidt nærmere. Er den ægte eller et phishingforsøg?</p>
@@ -133,372 +124,407 @@
                 </div>
 
             </div>
-        </div>
+            </div>
 
-        <div class="tekst">
+             <div class="tekst">
             
-            <div class="valgtekst">
-                <p>Jeg er helt sikker på, at det her er et phishing forsøg, så den skal bare direkte i spam-mappen!</p>
-                <a href="#" class="valg" >I SPAM </a>
-            </div>
-            <div class="valgtekst">
-                <p>Hmm... Jeg er faktisk ikke helt sikker. Jeg tror lige jeg vil sikre mig, ved at se om der står noget om pakken på GLS pakke app.</p>
-                <a href="#" class="valg" >Jeg tjekker GLS App'en</a>
-            </div>
-            <div class="valgtekst">
-                <p>Der er ingen tvivl! Det her er en ægte mail fra GLS, og jeg vil ikke risikere, at min pakke ryger tilbage til afsenderen, Jeg følger linket og betaler gebyret!</p>
-                <a href="#" class="valg" >Mailen er ægte </a>
-            </div>
+                <div class="valgtekst">
+                    <p>Jeg er helt sikker på, at det her er et phishing forsøg, så den skal bare direkte i spam-mappen!</p>
+                    <a href="#" class="valg" >I SPAM </a>
+                </div>
+                <div class="valgtekst">
+                    <p>Hmm... Jeg er faktisk ikke helt sikker. Jeg tror lige jeg vil sikre mig, ved at se om der står noget om pakken på GLS pakke app.</p>
+                    <a href="#" class="valg" >Jeg tjekker GLS App'en</a>
+                </div>
+                <div class="valgtekst">
+                    <p>Der er ingen tvivl! Det her er en ægte mail fra GLS, og jeg vil ikke risikere, at min pakke ryger tilbage til afsenderen, Jeg følger linket og betaler gebyret!</p>
+                    <a href="#" class="valg" >Mailen er ægte </a>
+                </div>
             
-        </div>
-
-    </section>
-
-
-    <section class="scene glsmailispam"><!-- index 3 -->
-
-        <img src="img/sikker.jpg" alt="Billed af en sikkerhedsguru" class="resultat">
-        <h2 class="godtsvar">Godt gået!</h2>
-        <p>Du har et skarpt øje, og kunne uden tvivl spotte, at mailen var et phishing forsøg!
-        Din data er i sikre hænder!
-        </p>
-
-        <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil vide mere om phishing, så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
-     
-    </section>
-
-    <section class="scene glsmailtjek"><!-- index 4 -->
-
-        <img src="img/tvivl.jpg" alt="Billed af et brev med djævlehorn og engleglorie, med spørgsmålstegn på." class="resultat">
-        <h2 class="oksvar">Du var i tvivl.</h2>
-        <p>Da du jævnligt får pakker tilsendt, har du naturligvis installeret GLS pakke-app. Og på appen står der intet om en pakke der skal betales told for. 
-        </p>
-        <p>Det var altså et phishing forsøg! </p>
-        <p>Og du gjorde det helt rigtige i tvivlstilfælde, du tjekkede om du kunne bekræfte indholdet, uden om mailen. </p>
-
-        <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil blive lidt klogere på hvordan man spotter et phishing forsøg så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
-
-    </section>
-
-
-    <section class="scene glsmailhacket"><!-- index 5 -->
-
-         <img src="img/hacket.jpg" alt="Billed af cyberkriminel der har hacket dig." class="resultat">
-        <h2 class="skidtsvar">Du er blevet hacket!</h2>
-        <p>Åh nej, mailen var et phishing forsøg, og nu er dine betalingsinformationer blevet kompromitteret! </p>
-
-        <p>I sådan et tilfælde skal du skynde dig at kontakte din bank og få spærret dit kort, inden cyberkriminelle kan nå at udnytte din fejl.</p>
-
-        <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, men først bør du <a href="readmore.html" class="morelink">læse mere</a> her om, hvordan du undgår at falde for et phishing forsøg, og hvad du kan gøre, når du er gået i fælden!</p>
-
-    </section>
-
-    <section class="scene tv2mail"><!-- index 6 --------------------------->
-
-         <div class="info">
-            <p>Prøv at undesøge mailen nedenunder lidt nærmere. Er den ægte eller et phishingforsøg?</p>
-        </div>
-
-        <div class="seMail" >
-
-            <h2>Opdater dine betalingsoplysninger for at fortsætte TV2-abonnement</h2>
-
-            <div class="mailinfo">
-                <div class="ikon"  id="tv2i"><i class="fa-solid fa-circle-user"></i></div>
-                <div class="afsender"><span title="argsen@zohonmail.eu"><p>TV2 PLAY</p></span></div>
-                <div class="tidspunkt"><p>Tors. april 16 kl. 12.38</p></div>
             </div>
 
-            <div class="tv2mailcontent">
-                <h2>Tv2 Play</h2>
-                <div class="tv2mailtext">
-                    
-                    <h3>Opdater dine betalingsoplysninger for at fortsætte TV2-abonnement</h3>
-                    <div class="tv2budskab">
+            </section>    
+        </div>
+        
+        <div class="scene">
+             <section class="glsmailispam"><!-- index 3 -->
 
-                        <h3>Kære værdsatte kunde,</h3>
+                <img src="img/sikker.jpg" alt="Billed af en sikkerhedsguru" class="resultat">
+                <h2 class="godtsvar">Godt gået!</h2>
+                <p>Du har et skarpt øje, og kunne uden tvivl spotte, at mailen var et phishing forsøg!
+                Din data er i sikre hænder!
+                </p>
 
+                <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil vide mere om phishing, så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
+            
+            </section>   
+        </div>
 
-                        <p>Vi håber, du nyder din oplevelse med TV2! Vi skriver for at informere dig om,
+        <div class="scene">
+            <section class="glsmailtjek"><!-- index 4 -->
 
-                        at vi ikke var i stand til at behandle din seneste betaling for dit abonnement.
+                <img src="img/tvivl.jpg" alt="Billed af et brev med djævlehorn og engleglorie, med spørgsmålstegn på." class="resultat">
+                <h2 class="oksvar">Du var i tvivl.</h2>
+                <p>Da du jævnligt får pakker tilsendt, har du naturligvis installeret GLS pakke-app. Og på appen står der intet om en pakke der skal betales told for. 
+                </p>
+                <p>Det var altså et phishing forsøg! </p>
+                <p>Og du gjorde det helt rigtige i tvivlstilfælde, du tjekkede om du kunne bekræfte indholdet, uden om mailen. </p>
 
-                        For at sikre uafbrudt adgang til dit yndlingsindhold,
+                <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil blive lidt klogere på hvordan man spotter et phishing forsøg så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
 
-                        beder vi dig venligst opdatere dine betalingsoplysninger hurtigst muligt.</p>
-                        
-                        <h3>Du kan opdatere dine betalingsoplysninger ved at klikke på knappen nedenfor:</h3>
+            </section>   
+        </div>
+    
+        <div class="scene">
+            <section class="glsmailhacket"><!-- index 5 -->
 
-                        <a href="#">Opdater nu</a>
+                <img src="img/hacket.jpg" alt="Billed af cyberkriminel der har hacket dig." class="resultat">
+                <h2 class="skidtsvar">Du er blevet hacket!</h2>
+                <p>Åh nej, mailen var et phishing forsøg, og nu er dine betalingsinformationer blevet kompromitteret! </p>
+
+                <p>I sådan et tilfælde skal du skynde dig at kontakte din bank og få spærret dit kort, inden cyberkriminelle kan nå at udnytte din fejl.</p>
+
+                <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, men først bør du <a href="readmore.html" class="morelink">læse mere</a> her om, hvordan du undgår at falde for et phishing forsøg, og hvad du kan gøre, når du er gået i fælden!</p>
+
+            </section>   
+        </div>
+
+        <div class="scene">
+            <section class="tv2mail"><!-- index 6 --------------------------->
+
+                <div class="info">
+                    <p>Prøv at undesøge mailen nedenunder lidt nærmere. Er den ægte eller et phishingforsøg?</p>
+                </div>
+
+                <div class="seMail" >
+
+                    <h2>Opdater dine betalingsoplysninger for at fortsætte TV2-abonnement</h2>
+
+                    <div class="mailinfo">
+                        <div class="ikon"  id="tv2i"><i class="fa-solid fa-circle-user"></i></div>
+                        <div class="afsender"><span title="argsen@zohonmail.eu"><p>TV2 PLAY</p></span></div>
+                        <div class="tidspunkt"><p>Tors. april 16 kl. 12.38</p></div>
                     </div>
-                </div>
-                
 
-            </div>
+                    <div class="tv2mailcontent">
+                        <h2>Tv2 Play</h2>
+                        <div class="tv2mailtext">
+                            
+                            <h3>Opdater dine betalingsoplysninger for at fortsætte TV2-abonnement</h3>
+                            <div class="tv2budskab">
 
-         <div class="tekst">
-            
-            <div class="valgtekst">
-                <p>Jeg er helt sikker på, at det her er et phishing forsøg, så den skal bare direkte i spam-mappen!</p>
-                <a href="#" class="valg" >I SPAM </a>
-            </div>
-            <div class="valgtekst">
-                <p>Hmm... Jeg er faktisk ikke helt sikker, og jeg kan ikke helt huske, om jeg har et aktivt TV2-abonnement. Jeg går uden om mailen og direkte til TV2's hjemmeside, for at tjekke det.</p>
-                <a href="#" class="valg" >Gå ind på TV2's hjemmeside</a>
-            </div>
-            <div class="valgtekst">
-                <p>Der er ingen tvivl! Det her er en ægte mail fra TV2 PLAY, og jeg vil ikke risikere, at jeg ikke kan se fodboldkampen i aften, jeg følger linket og opdatere mine oplysninger!</p>
-                <a href="#" class="valg" >Mailen er ægte </a>
-            </div>
-            
-        </div>
-
-    </section>
+                                <h3>Kære værdsatte kunde,</h3>
 
 
-    <section class="scene tv2ispam"><!-- index 7 -->
+                                <p>Vi håber, du nyder din oplevelse med TV2! Vi skriver for at informere dig om,
 
-        <img src="img/sikker.jpg" alt="Billed af en sikkerhedsguru" class="resultat">
-        <h2 class="godtsvar">Godt gået!</h2>
-        <p>Du har et skarpt øje, og kunne uden tvivl spotte, at mailen var et phishing forsøg!
-        Din data er i sikre hænder!
-        </p>
+                                at vi ikke var i stand til at behandle din seneste betaling for dit abonnement.
 
-        <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil vide mere om phishing, så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
+                                For at sikre uafbrudt adgang til dit yndlingsindhold,
 
-    </section>
-    <section class="scene tv2mailtjek"><!-- index 8 -->
+                                beder vi dig venligst opdatere dine betalingsoplysninger hurtigst muligt.</p>
+                                
+                                <h3>Du kan opdatere dine betalingsoplysninger ved at klikke på knappen nedenfor:</h3>
 
-         <img src="img/tvivl.jpg" alt="Billed af et brev med djævlehorn og engleglorie, med spørgsmålstegn på." class="resultat">
-        <h2 class="oksvar">Du var i tvivl.</h2>
-        <p>Det var godt du tog dig tid til at logge ind på TV2 Play for at tjekke efter, for alt ser ud til at være i den skønneste orden. 
-        </p>
-        <p>Det var altså et phishing forsøg! </p>
-        <p>Og du gjorde det helt rigtige i tvivlstilfælde, du tjekkede om du kunne bekræfte indholdet, uden om mailen. </p>
+                                <a href="#">Opdater nu</a>
+                            </div>
+                        </div>
+                        
 
-        <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil blive lidt klogere på hvordan man spotter et phishing forsøg så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
+                    </div>
 
-    </section>
-    <section class="scene tv2mailhacket"><!-- index 9 -->
-
-        <img src="img/hacket.jpg" alt="Billed af cyberkriminel der har hacket dig." class="resultat">
-        <h2 class="skidtsvar">Du er blevet hacket!</h2>
-        <p>Åh nej, mailen var et phishing forsøg, og nu er dine betalingsinformationer blevet kompromitteret! </p>
-
-        <p>I sådan et tilfælde skal du skynde dig at kontakte din bank og få spærret dit kort, inden cyberkriminelle kan nå at udnytte din fejl.</p>
-
-        <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, men først bør du <a href="readmore.html" class="morelink">læse mere</a> her om, hvordan du undgår at falde for et phishing forsøg, og hvad du kan gøre, når du er gået i fælden!</p>
-
-
-    </section>
-
-    <section class="scene mofibomail"><!-- index 10 -------------------------->
-
-        <div class="info">
-            <p>Prøv at undesøge mailen nedenunder lidt nærmere. Er den ægte eller et phishingforsøg?</p>
-        </div>
-
-        <div class="seMail" >
-
-            <h2>Dit abonnement kunne ikke fornyes</h2>
-
-            <div class="mailinfo">
-                <div class="ikon" id="mofiboi"><i class="fa-solid fa-circle-user"></i></div>
-                <div class="afsender"><span title="no-reply@service.mofibo.com"><p>MOFIBO</p></span></div>
-                <div class="tidspunkt"><p>Ons. april 15 kl. 08.02</p></div>
-            </div>
-
-            <div class="mofibomailcontent">
-                <div class="besked">
-                    <img src="img/mofibologo.jpg" alt="mofibo banner">
-                    <h2>Din betaling gik ikke igennem</h2>
+                <div class="tekst">
                     
-                    <p>Vi kunne ikke forny dit abonnement, fordi din betaling ikke gik igennem.</p>
-                    <p>Har du brug for at opdatere dine betalingsoplysninger? Bare rolig, vi prøver snart igen!
-</p>
-                   <a href="#" class="mofiboknap">Opdater dine betalingsoplysninger</a>
-
-                    <p>Hvis dette var et midlertidigt problem, såsom pga. utilstrækkelige midler, kan du vente på næste forsøg på fornyelse. Hvis det andet forsøg mislykkes vil din app-adgang blive sat på pause.</p>
-                    <p>Stadig problemer? Kontakt Mofibos support, eller læs mere om mulige årsager <a href="#">her</a></p>
-
-                   <div class="mofibomailfooter">
-                        <p class="biggerp">Spørgsmål? Besøg vores <a href="#">FAQ</a></p>
-                        <p>Copyright &#169; 2026 | Store Kongensgade 132, 1. sal. | 1264 København K</p>
-                   </div>
+                    <div class="valgtekst">
+                        <p>Jeg er helt sikker på, at det her er et phishing forsøg, så den skal bare direkte i spam-mappen!</p>
+                        <a href="#" class="valg" >I SPAM </a>
+                    </div>
+                    <div class="valgtekst">
+                        <p>Hmm... Jeg er faktisk ikke helt sikker, og jeg kan ikke helt huske, om jeg har et aktivt TV2-abonnement. Jeg går uden om mailen og direkte til TV2's hjemmeside, for at tjekke det.</p>
+                        <a href="#" class="valg" >Gå ind på TV2's hjemmeside</a>
+                    </div>
+                    <div class="valgtekst">
+                        <p>Der er ingen tvivl! Det her er en ægte mail fra TV2 PLAY, og jeg vil ikke risikere, at jeg ikke kan se fodboldkampen i aften, jeg følger linket og opdatere mine oplysninger!</p>
+                        <a href="#" class="valg" >Mailen er ægte </a>
+                    </div>
+                    
                 </div>
-               
-            </div>
 
-         <div class="tekst">
-            
-            <div class="valgtekst">
-                <p>Jeg er helt sikker på, at det her er et phishing forsøg, så den skal bare direkte i spam-mappen!</p>
-                <a href="#" class="valg" >I SPAM </a>
-            </div>
-            <div class="valgtekst">
-                <p>Hmm... Jeg er faktisk ikke helt sikker, og jeg kan ikke helt huske, om jeg har et aktivt MOFIBO-abonnement. Jeg går uden om mailen og direkte til MOFIBO's hjemmeside, for at tjekke det.</p>
-                <a href="#" class="valg" >Gå ind på MOFIBO's app</a>
-            </div>
-            <div class="valgtekst">
-                <p>Der er ingen tvivl! Det her er en ægte mail fra MOFIBO, og jeg vil ikke risikere, at jeg ikke kan høre vidre på min min roman i weekenden, jeg følger linket og opdatere mine oplysninger!</p>
-                <a href="#" class="valg" >Mailen er ægte </a>
-            </div>
-            
+            </section>  
         </div>
 
-    </section>
 
-    <section class="scene mofibomailispam"><!-- index 11 -->
+        <div class="scene">
+            <section class="tv2ispam"><!-- index 7 -->
 
-         <img src="img/reager.jpg" alt="Billed af en vigtig og svar krævende mail" class="resultat">
-        <h2 class="godtsvar">Ups! Mailen var ægte.</h2>
-        <p>Nå for pokker! Mailen var ægte, og ved ikke at reagere på den, fik du dyre rykkergebyrer og din konto blev lukket ned, indtil du betaler det skyldige beløb.
-        </p>
+                <img src="img/sikker.jpg" alt="Billed af en sikkerhedsguru" class="resultat">
+                <h2 class="godtsvar">Godt gået!</h2>
+                <p>Du har et skarpt øje, og kunne uden tvivl spotte, at mailen var et phishing forsøg!
+                Din data er i sikre hænder!
+                </p>
 
-        <p>Det er ikke alle mails der er phishingforsøg, og her burde du måske som minimum have tjekket, om indholdet kunne bekræftes, ved at logge ind på Mofibos officielle hjemmeside eller deres app.</p>
+                <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil vide mere om phishing, så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
 
-        <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil blive lidt klogere på hvordan man spotter et phishing forsøg så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
-
-
-    </section>
-
-    <section class="scene mofibomailtjek"><!-- index 12 -->
-
-         <img src="img/tvivl.jpg" alt="Billed af et brev med djævlehorn og engleglorie, med spørgsmålstegn på." class="resultat">
-        <h2 class="oksvar">Du var i tvivl.</h2>
-        <p>Du er i tvivl og beslutter dig for at logge ind på Mofibo igennem deres officielle side, og gudskelov for det, mailen er nemlig rigtig.</p>
-        <p>Du har glemt at opdatere din betalingsinformation da du modtog dit nye dankort tidligere på måneden. Hvis du ikke havde reageret, risikerede du at modtage rykkergebyrer og en nedlukning af din konto</p>
-
-        <p>Du gjorde det helt rigtige i tvivlstilfælde, du tjekke om du kunne bekræfte indholdet, uden om mailen. </p>
-
-        <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil blive lidt klogere på hvordan man spotter et phishing forsøg så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
-
-    </section>
-
-    <section class="scene mofibomailsand"><!-- index 13 -->
-
-        <img src="img/sikker.jpg" alt="Billed af en sikkerhedsguru" class="resultat">
-        <h2 class="godtsvar">Godt gået!</h2>
-        <p>Du har et skarpt øje, og kunne uden tvivl spotte, at mailen var ægte!
-        Din data er i sikre hænder!
-        </p>
-
-         <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil vide mere om phishing, så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
-
-
-    </section>
-
-    <section class="scene almbrandmail"><!----------------------- index 14 -------------------->
-
-        <div class="info">
-            <p>Prøv at undesøge mailen nedenunder lidt nærmere. Er den ægte eller et phishingforsøg?</p>
+            </section>  
         </div>
 
-        <div class="seMail" >
+        <div class="scene">
+            <section class="tv2mailtjek"><!-- index 8 -->
 
-            <h2>Dit køretøj er ikke længere ansvarsforsikret - Ny post fra Alm. Brand</h2>
+                <img src="img/tvivl.jpg" alt="Billed af et brev med djævlehorn og engleglorie, med spørgsmålstegn på." class="resultat">
+                <h2 class="oksvar">Du var i tvivl.</h2>
+                <p>Det var godt du tog dig tid til at logge ind på TV2 Play for at tjekke efter, for alt ser ud til at være i den skønneste orden. 
+                </p>
+                <p>Det var altså et phishing forsøg! </p>
+                <p>Og du gjorde det helt rigtige i tvivlstilfælde, du tjekkede om du kunne bekræfte indholdet, uden om mailen. </p>
 
-            <div class="mailinfo">
-                <div class="ikon" id="almbi"><i class="fa-solid fa-circle-user"></i></div>
-                <div class="afsender"><span title="kundecenter.erhverv@almbrand.dk"><p>Alm. BRAND</p></span></div>
-                <div class="tidspunkt"><p>Man. april 13 kl. 08.05</p></div>
-            </div>
+                <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil blive lidt klogere på hvordan man spotter et phishing forsøg så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
 
-            <div class="almmailcontent">
-
-                <p>Hej ( dit navn )</p>
-                <p>Der er ny digital post fra Alm. Brand. Dit køretøj er ikke længere ansvarsforsikret, og der er risiko for, at du bliver opkrævet gebyrer. Det er vigtigt, at du læser din post, så du kan se, hvad du skal gøre.</p>
-                <p>Vi oplever udfordringer med vores håndtering af dokumenter i Mit Alm. Brand. Derfor kan du opleve, at nogle beskeder ikke er synlige i dit overblik. Vi arbejder på en løsning. Tak for tålmodigheden.</p>
-
-                <h2>Her finder du din post</h2>
-
-                <h3>På mobil eller tablet</h3>
-                <p>Du finder din post i beskeder i vores app 'Mit Alm. Brand'.</p>
-
-                <img class="playstoreimg" src="img/appstoreimg.jpg" alt="appstores logo">
-
-                <h3>På en computer</h3>
-                <p>Log på vores digitale selvbetjening via <a href="#">www.almbrand.dk/kundeservice/log-pa</a> <br>
-                 Du finder din post i beskeder.</p>
-
-                <p>For at uvedkommende ikke skal kunne få adgang til dine dokumenter, har vi valgt at fjerne alle direkte links til sider, hvor du skal logge dig ind.</p>
-
-                <h2>Vil du vide mere?</h2>
-                <p>Har du spørgsmål er du velkommen til at ringe til os på telefon 87939620. Telefonerne er åbne alle hverdage kl. 8.00 - 16.00.</p>
-
-                <h2>Med venlig hilsen</h2>
-                <p>Alm. Brand Forsikring A/S <br>
-                Kundecenter Landbrug</p>
-
-                <img class="almlogoimg" src="img/almbrandlogo.jpg" alt="alm. Brand logo">
-                <a href="#">almbrand.dk</a>
+            </section>   
+        </div>
 
 
-            
-                <div class="almmailfooter">
-                    <h2>Alm. Brand Forsikring A/S | CVR 10526949 | Midtermolen 7 | DK-2100 København Ø | T +45 35 47 47 47</h2>
-                    <p>Er du ikke den tiltænkte modtager af denne mail, beder vi dig venligst informere os, slette mailen og ikke videredistribuere indholdet og evt. vedhæftede filer. Du kan læse mere hvordan vi behandler dine personoplysninger, og hvilke rettigheder du har i vores privatlivspolitk ved at klikke <a href="">her.</a> Denne mail er scannet for virus.<br>
-                    For information about how we process your personal data, please click    <a href="">here.</a></p>
+        <div class="scene">
+            <section class="tv2mailhacket"><!-- index 9 -->
+
+                <img src="img/hacket.jpg" alt="Billed af cyberkriminel der har hacket dig." class="resultat">
+                <h2 class="skidtsvar">Du er blevet hacket!</h2>
+                <p>Åh nej, mailen var et phishing forsøg, og nu er dine betalingsinformationer blevet kompromitteret! </p>
+
+                <p>I sådan et tilfælde skal du skynde dig at kontakte din bank og få spærret dit kort, inden cyberkriminelle kan nå at udnytte din fejl.</p>
+
+                <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, men først bør du <a href="readmore.html" class="morelink">læse mere</a> her om, hvordan du undgår at falde for et phishing forsøg, og hvad du kan gøre, når du er gået i fælden!</p>
+
+
+            </section>   
+        </div>
+
+        <div class="scene">
+            <section class="mofibomail"><!-- index 10 -------------------------->
+
+                <div class="info">
+                    <p>Prøv at undesøge mailen nedenunder lidt nærmere. Er den ægte eller et phishingforsøg?</p>
                 </div>
-            
-            </div>
 
-         <div class="tekst">
-            
-            <div class="valgtekst">
-                <p>Jeg er helt sikker på, at det her er et phishing forsøg, så den skal bare direkte i spam-mappen!</p>
-                <a href="#" class="valg" >I SPAM </a>
-            </div>
-            <div class="valgtekst">
-                <p>Hmm... Det var mærkeligt, mine forsikringer skulle gerne betales automatisk over PBS, men at køre en bil uden forsikring er ulovligt, jeg må hellere ringe til mit forsikringsselskab og tjekke, just in case...</p>
-                <a href="#" class="valg" >Jeg ringer til Alm. Brand</a>
-            </div>
-            <div class="valgtekst">
-                <p>Der er ingen tvivl! Det her er en ægte mail fra Alm. BRAND! Noget må været gået galt med banken, jeg må hellere se at få betalt regningen så min bil er forsikret!</p>
-                <a href="#" class="valg" >Mailen er ægte </a>
-            </div>
-            
+                <div class="seMail" >
+
+                    <h2>Dit abonnement kunne ikke fornyes</h2>
+
+                    <div class="mailinfo">
+                        <div class="ikon" id="mofiboi"><i class="fa-solid fa-circle-user"></i></div>
+                        <div class="afsender"><span title="no-reply@service.mofibo.com"><p>MOFIBO</p></span></div>
+                        <div class="tidspunkt"><p>Ons. april 15 kl. 08.02</p></div>
+                    </div>
+
+                    <div class="mofibomailcontent">
+                        <div class="besked">
+                            <img src="img/mofibologo.jpg" alt="mofibo banner">
+                            <h2>Din betaling gik ikke igennem</h2>
+                            
+                            <p>Vi kunne ikke forny dit abonnement, fordi din betaling ikke gik igennem.</p>
+                            <p>Har du brug for at opdatere dine betalingsoplysninger? Bare rolig, vi prøver snart igen!
+        </p>
+                        <a href="#" class="mofiboknap">Opdater dine betalingsoplysninger</a>
+
+                            <p>Hvis dette var et midlertidigt problem, såsom pga. utilstrækkelige midler, kan du vente på næste forsøg på fornyelse. Hvis det andet forsøg mislykkes vil din app-adgang blive sat på pause.</p>
+                            <p>Stadig problemer? Kontakt Mofibos support, eller læs mere om mulige årsager <a href="#">her</a></p>
+
+                        <div class="mofibomailfooter">
+                                <p class="biggerp">Spørgsmål? Besøg vores <a href="#">FAQ</a></p>
+                                <p>Copyright &#169; 2026 | Store Kongensgade 132, 1. sal. | 1264 København K</p>
+                        </div>
+                        </div>
+                    
+                    </div>
+
+                <div class="tekst">
+                    
+                    <div class="valgtekst">
+                        <p>Jeg er helt sikker på, at det her er et phishing forsøg, så den skal bare direkte i spam-mappen!</p>
+                        <a href="#" class="valg" >I SPAM </a>
+                    </div>
+                    <div class="valgtekst">
+                        <p>Hmm... Jeg er faktisk ikke helt sikker, og jeg kan ikke helt huske, om jeg har et aktivt MOFIBO-abonnement. Jeg går uden om mailen og direkte til MOFIBO's hjemmeside, for at tjekke det.</p>
+                        <a href="#" class="valg" >Gå ind på MOFIBO's app</a>
+                    </div>
+                    <div class="valgtekst">
+                        <p>Der er ingen tvivl! Det her er en ægte mail fra MOFIBO, og jeg vil ikke risikere, at jeg ikke kan høre vidre på min min roman i weekenden, jeg følger linket og opdatere mine oplysninger!</p>
+                        <a href="#" class="valg" >Mailen er ægte </a>
+                    </div>
+                    
+                </div>
+
+            </section>    
         </div>
 
-    </section>
-    <section class="scene almbrandmailispam"><!-- index 15 -->
+        <div class="scene">
+            <section class="mofibomailispam"><!-- index 11 -->
 
-         <img src="img/reager.jpg" alt="Billed af en vigtig og svar krævende mail" class="resultat">
-        <h2 class="godtsvar">Ups! Mailen var ægte.</h2>
-        <p>Nå for pokker! Mailen var ægte, og ved ikke at reagere på den, mistede du ansvarsforsikringen på din bil. Det gav dig dagbøder på 250 kr fra DFIM, og hvis du var blevet standset af politiet eller havde forårsaget en ulykke, så havde du virkelig været på den!
-        </p>
+                <img src="img/reager.jpg" alt="Billed af en vigtig og svar krævende mail" class="resultat">
+                <h2 class="godtsvar">Ups! Mailen var ægte.</h2>
+                <p>Nå for pokker! Mailen var ægte, og ved ikke at reagere på den, fik du dyre rykkergebyrer og din konto blev lukket ned, indtil du betaler det skyldige beløb.
+                </p>
 
-        <p>Det er ikke alle mails der er phishingforsøg, og her burde du måske som minimum have tjekket, om indholdet kunne bekræftes, ved at ringe direkte til Alm Brand og snakke med  dem, eller logge ind på deres hjemmeside.</p>
+                <p>Det er ikke alle mails der er phishingforsøg, og her burde du måske som minimum have tjekket, om indholdet kunne bekræftes, ved at logge ind på Mofibos officielle hjemmeside eller deres app.</p>
 
-        <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil blive lidt klogere på hvordan man spotter et phishing forsøg så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
+                <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil blive lidt klogere på hvordan man spotter et phishing forsøg så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
 
 
-    </section>
+            </section>   
+        </div>
+        
+        <div class="scene">
+            <section class="mofibomailtjek"><!-- index 12 -->
 
-    <section class="scene almenbrandmailtjek"><!-- index 16 -->
+                <img src="img/tvivl.jpg" alt="Billed af et brev med djævlehorn og engleglorie, med spørgsmålstegn på." class="resultat">
+                <h2 class="oksvar">Du var i tvivl.</h2>
+                <p>Du er i tvivl og beslutter dig for at logge ind på Mofibo igennem deres officielle side, og gudskelov for det, mailen er nemlig rigtig.</p>
+                <p>Du har glemt at opdatere din betalingsinformation da du modtog dit nye dankort tidligere på måneden. Hvis du ikke havde reageret, risikerede du at modtage rykkergebyrer og en nedlukning af din konto</p>
 
-        <img src="img/tvivl.jpg" alt="Billed af et brev med djævlehorn og engleglorie, med spørgsmålstegn på." class="resultat">
-        <h2 class="oksvar">Du var i tvivl.</h2>
-        <p>Du er i tvivl og beslutter dig for at logge ind på Mofibo igennem deres officielle side, og gudskelov for det, mailen er nemlig rigtig.</p>
-        <p>Du har glemt at opdatere din betalingsinformation da du modtog dit nye dankort tidligere på måneden. Hvis du ikke havde reageret, risikerede du at modtage rykkergebyrer og en nedlukning af din konto</p>
+                <p>Du gjorde det helt rigtige i tvivlstilfælde, du tjekke om du kunne bekræfte indholdet, uden om mailen. </p>
 
-        <p>Du gjorde det helt rigtige i tvivlstilfælde, du tjekke om du kunne bekræfte indholdet, uden om mailen. </p>
+                <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil blive lidt klogere på hvordan man spotter et phishing forsøg så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
 
-        <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil blive lidt klogere på hvordan man spotter et phishing forsøg så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
+            </section>   
+        </div>
 
-    </section>
+        <div class="scene">
+            <section class="mofibomailsand"><!-- index 13 -->
 
-    <section class="scene almenbrandmailsand"><!-- index 17 -->
+                <img src="img/sikker.jpg" alt="Billed af en sikkerhedsguru" class="resultat">
+                <h2 class="godtsvar">Godt gået!</h2>
+                <p>Du har et skarpt øje, og kunne uden tvivl spotte, at mailen var ægte!
+                Din data er i sikre hænder!
+                </p>
 
-         <img src="img/sikker.jpg" alt="Billed af en sikkerhedsguru" class="resultat">
-        <h2 class="godtsvar">Godt gået!</h2>
-        <p>Du har et skarpt øje, og kunne uden tvivl spotte, at mailen var ægte!
-        Din data er i sikre hænder!
-        </p>
+                <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil vide mere om phishing, så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
 
-         <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil vide mere om phishing, så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
 
-    </section>
+            </section>   
+        </div>
+    
+        <div class="scene">
+            <section class="almbrandmail"><!----------------------- index 14 -------------------->
+
+                <div class="info">
+                    <p>Prøv at undesøge mailen nedenunder lidt nærmere. Er den ægte eller et phishingforsøg?</p>
+                </div>
+
+                <div class="seMail" >
+
+                    <h2>Dit køretøj er ikke længere ansvarsforsikret - Ny post fra Alm. Brand</h2>
+
+                    <div class="mailinfo">
+                        <div class="ikon" id="almbi"><i class="fa-solid fa-circle-user"></i></div>
+                        <div class="afsender"><span title="kundecenter.erhverv@almbrand.dk"><p>Alm. BRAND</p></span></div>
+                        <div class="tidspunkt"><p>Man. april 13 kl. 08.05</p></div>
+                    </div>
+
+                    <div class="almmailcontent">
+
+                        <p>Hej ( dit navn )</p>
+                        <p>Der er ny digital post fra Alm. Brand. Dit køretøj er ikke længere ansvarsforsikret, og der er risiko for, at du bliver opkrævet gebyrer. Det er vigtigt, at du læser din post, så du kan se, hvad du skal gøre.</p>
+                        <p>Vi oplever udfordringer med vores håndtering af dokumenter i Mit Alm. Brand. Derfor kan du opleve, at nogle beskeder ikke er synlige i dit overblik. Vi arbejder på en løsning. Tak for tålmodigheden.</p>
+
+                        <h2>Her finder du din post</h2>
+
+                        <h3>På mobil eller tablet</h3>
+                        <p>Du finder din post i beskeder i vores app 'Mit Alm. Brand'.</p>
+
+                        <img class="playstoreimg" src="img/appstoreimg.jpg" alt="appstores logo">
+
+                        <h3>På en computer</h3>
+                        <p>Log på vores digitale selvbetjening via <a href="#">www.almbrand.dk/kundeservice/log-pa</a> <br>
+                        Du finder din post i beskeder.</p>
+
+                        <p>For at uvedkommende ikke skal kunne få adgang til dine dokumenter, har vi valgt at fjerne alle direkte links til sider, hvor du skal logge dig ind.</p>
+
+                        <h2>Vil du vide mere?</h2>
+                        <p>Har du spørgsmål er du velkommen til at ringe til os på telefon 87939620. Telefonerne er åbne alle hverdage kl. 8.00 - 16.00.</p>
+
+                        <h2>Med venlig hilsen</h2>
+                        <p>Alm. Brand Forsikring A/S <br>
+                        Kundecenter Landbrug</p>
+
+                        <img class="almlogoimg" src="img/almbrandlogo.jpg" alt="alm. Brand logo">
+                        <a href="#">almbrand.dk</a>
+
+
+                    
+                        <div class="almmailfooter">
+                            <h2>Alm. Brand Forsikring A/S | CVR 10526949 | Midtermolen 7 | DK-2100 København Ø | T +45 35 47 47 47</h2>
+                            <p>Er du ikke den tiltænkte modtager af denne mail, beder vi dig venligst informere os, slette mailen og ikke videredistribuere indholdet og evt. vedhæftede filer. Du kan læse mere hvordan vi behandler dine personoplysninger, og hvilke rettigheder du har i vores privatlivspolitk ved at klikke <a href="">her.</a> Denne mail er scannet for virus.<br>
+                            For information about how we process your personal data, please click    <a href="">here.</a></p>
+                        </div>
+                    
+                    </div>
+
+                <div class="tekst">
+                    
+                    <div class="valgtekst">
+                        <p>Jeg er helt sikker på, at det her er et phishing forsøg, så den skal bare direkte i spam-mappen!</p>
+                        <a href="#" class="valg" >I SPAM </a>
+                    </div>
+                    <div class="valgtekst">
+                        <p>Hmm... Det var mærkeligt, mine forsikringer skulle gerne betales automatisk over PBS, men at køre en bil uden forsikring er ulovligt, jeg må hellere ringe til mit forsikringsselskab og tjekke, just in case...</p>
+                        <a href="#" class="valg" >Jeg ringer til Alm. Brand</a>
+                    </div>
+                    <div class="valgtekst">
+                        <p>Der er ingen tvivl! Det her er en ægte mail fra Alm. BRAND! Noget må været gået galt med banken, jeg må hellere se at få betalt regningen så min bil er forsikret!</p>
+                        <a href="#" class="valg" >Mailen er ægte </a>
+                    </div>
+                    
+                </div>
+
+            </section>  
+        </div>
+
+        <div class="scene">
+            <section class="almbrandmailispam"><!-- index 15 -->
+
+                <img src="img/reager.jpg" alt="Billed af en vigtig og svar krævende mail" class="resultat">
+                <h2 class="godtsvar">Ups! Mailen var ægte.</h2>
+                <p>Nå for pokker! Mailen var ægte, og ved ikke at reagere på den, mistede du ansvarsforsikringen på din bil. Det gav dig dagbøder på 250 kr fra DFIM, og hvis du var blevet standset af politiet eller havde forårsaget en ulykke, så havde du virkelig været på den!
+                </p>
+
+                <p>Det er ikke alle mails der er phishingforsøg, og her burde du måske som minimum have tjekket, om indholdet kunne bekræftes, ved at ringe direkte til Alm Brand og snakke med  dem, eller logge ind på deres hjemmeside.</p>
+
+                <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil blive lidt klogere på hvordan man spotter et phishing forsøg så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
+
+
+            </section>    
+        </div>
+
+
+        <div class="scene">
+            <section class="almenbrandmailtjek"><!-- index 16 -->
+
+                <img src="img/tvivl.jpg" alt="Billed af et brev med djævlehorn og engleglorie, med spørgsmålstegn på." class="resultat">
+                <h2 class="oksvar">Du var i tvivl.</h2>
+                <p>Du er i tvivl og beslutter dig for at logge ind på Mofibo igennem deres officielle side, og gudskelov for det, mailen er nemlig rigtig.</p>
+                <p>Du har glemt at opdatere din betalingsinformation da du modtog dit nye dankort tidligere på måneden. Hvis du ikke havde reageret, risikerede du at modtage rykkergebyrer og en nedlukning af din konto</p>
+
+                <p>Du gjorde det helt rigtige i tvivlstilfælde, du tjekke om du kunne bekræfte indholdet, uden om mailen. </p>
+
+                <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil blive lidt klogere på hvordan man spotter et phishing forsøg så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
+
+            </section>  
+        </div>
+
+        
+        <div class="scene">
+         <section class="almenbrandmailsand"><!-- index 17 -->
+
+                <img src="img/sikker.jpg" alt="Billed af en sikkerhedsguru" class="resultat">
+                <h2 class="godtsvar">Godt gået!</h2>
+                <p>Du har et skarpt øje, og kunne uden tvivl spotte, at mailen var ægte!
+                Din data er i sikre hænder!
+                </p>
+
+                <p>Hvis du vil prøve igen, så kan du gå tilbage til <a href="#" class="valg morelink">start</a>, og hvis du vil vide mere om phishing, så <a href="readmore.html" class="morelink">læs mere</a> her.</p>
+
+            </section>   
+        </div>
    
    </main>
 

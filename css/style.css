@@ -70,7 +70,7 @@ img {
   margin: 1.5rem auto;
 }
 
-/*--------------------------------- fælles for toppen af mailsne-----------------*/
+/*--------------------------------- fælles for toppen af alle mails -----------------*/
 .info {
   margin: 3rem auto;
   padding-bottom: 3rem;
@@ -308,6 +308,9 @@ img {
   width: 70%;
   height: auto;
   margin-left: 1rem;
+}
+.indbakke .logo .onlyforphone {
+  display: none;
 }
 .indbakke .mailnav {
   grid-area: mailnav;
@@ -972,8 +975,8 @@ img {
   .info {
     margin: 3rem auto;
     padding-bottom: 3rem;
-    min-width: 400px;
-    max-width: 800px;
+    min-width: 3750px;
+    max-width: 400px;
     border-bottom: solid 1px #A4A4A4;
   }
   .info p {
@@ -992,7 +995,7 @@ img {
     display: block;
   }
   .seMail .mailinfo {
-    margin: 2rem auto 2rem 0.2rem;
+    margin: 1rem auto 1rem 0.1rem;
     display: grid;
     grid-template-columns: 50px 1fr;
     grid-template-rows: 1fr 1fr;
@@ -1044,30 +1047,214 @@ img {
     margin: 1rem auto;
   }
   /*------------------------main + scener ---------------------*/
-  /*------------------------------- læs mere siden -------------------------------------------*/
-  .readmoremain {
-    width: 100dvw;
+  .indbakke {
+    max-width: 400px;
+    max-height: 600px;
+    border: 0;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 60px 500px;
+    grid-template-areas: "indbakkeTekst" "logo" "mails";
+  }
+  .indbakke .indbakkeTekst {
+    grid-area: indbakkeTekst;
+    background-color: #FBFDFF;
+    max-height: 300px;
+    border-bottom: solid 1px #A4A4A4;
+  }
+  .indbakke .indbakkeTekst p {
+    max-width: 400px;
+    margin: 1.5rem auto;
+  }
+  .indbakke .logo {
+    grid-area: logo;
+    background-color: #FBFDFF;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    border: 0;
   }
-  .readmoremain .moreinfo {
-    margin: 0.8rem auto;
-    padding: 0.5rem;
-    width: 375px;
+  .indbakke .logo img {
+    width: 50%;
+    height: auto;
+    margin-left: 0.5rem;
   }
-  .readmoremain .moreinfo h1 {
-    font-size: 1.5rem;
-  }
-  .readmoremain .moreinfo h2 {
+  .indbakke .logo .onlyforphone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #0E1A24;
     font-size: 1rem;
+    font-weight: 700;
   }
-  .readmoremain .moreinfo .underoverskrift {
-    font-size: 1rem;
-    margin: 0.8rem 0;
+  .indbakke .logo .onlyforphone i {
+    color: #0E1A24;
+    margin-left: 0.5rem;
   }
-  .readmoremain .moreinfo p {
-    line-height: 1.8rem;
-    padding: 0.5rem;
+  .indbakke .mailnav {
+    display: none;
   }
+  .indbakke .mails {
+    margin-top: 0.5rem;
+    border: 0;
+    grid-area: mails;
+    font-size: 1.2rem;
+  }
+  .indbakke .mails ul {
+    list-style-type: none;
+    margin: 2rem 0;
+  }
+  .indbakke .mails ul li {
+    color: #0E1A24;
+    margin-bottom: 1rem;
+  }
+  .indbakke .mails ul li i {
+    margin-right: 0.5em;
+  }
+  .indbakke .mails ul li li:hover {
+    color: #0E1A24;
+  }
+  .indbakke .mails {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "glsafsender" "glsemne" "glsdato" "tv2afsender" "tv2emne" "tv2dato" "mofiboafsender" "mofiboemne" "mofibodato" "almafsender" "almemne" "almdato";
+  }
+  .indbakke .mails a {
+    text-decoration: underline;
+    color: #0E1A24;
+    cursor: pointer;
+  }
+  .indbakke .mails a:hover {
+    color: #1162A3;
+  }
+  .indbakke .mails .fed {
+    font-weight: bolder;
+    color: #A4A4A4;
+    display: none;
+  }
+  .indbakke .mails .emneafsende {
+    grid-area: emneafsende;
+    display: none;
+  }
+  .indbakke .mails .emneemne {
+    grid-area: emneemne;
+    display: none;
+  }
+  .indbakke .mails .emnedato {
+    grid-area: emnedato;
+    display: none;
+  }
+  .indbakke .mails .glsafsender {
+    grid-area: glsafsender;
+    cursor: pointer;
+    border-top: solid 1px #A4A4A4;
+    background-color: #D9D9D9;
+  }
+  .indbakke .mails i {
+    color: #0519b0;
+  }
+  .indbakke .mails .glsemne {
+    grid-area: glsemne;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0.2rem 0;
+  }
+  .indbakke .mails .glsdato {
+    grid-area: glsdato;
+    margin-bottom: 0.2rem;
+  }
+  .indbakke .mails .tv2afsender {
+    grid-area: tv2afsender;
+    background-color: #D9D9D9;
+    cursor: pointer;
+    border-top: solid 1px #A4A4A4;
+  }
+  .indbakke .mails .tv2afsender i {
+    color: #f21b30;
+  }
+  .indbakke .mails .tv2emne {
+    grid-area: tv2emne;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0.2rem 0;
+  }
+  .indbakke .mails .tv2dato {
+    grid-area: tv2dato;
+    margin-bottom: 0.2rem;
+  }
+  .indbakke .mails .mofiboafsender {
+    grid-area: mofiboafsender;
+    background-color: #D9D9D9;
+    cursor: pointer;
+    border-top: solid 1px #A4A4A4;
+  }
+  .indbakke .mails .mofiboafsender i {
+    color: #ff5e29;
+  }
+  .indbakke .mails .mofiboemne {
+    grid-area: mofiboemne;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0.2rem 0;
+  }
+  .indbakke .mails .mofibodato {
+    grid-area: mofibodato;
+    margin-bottom: 0.2rem;
+  }
+  .indbakke .mails .almafsender {
+    grid-area: almafsender;
+    background-color: #D9D9D9;
+    cursor: pointer;
+    border-top: solid 1px #A4A4A4;
+  }
+  .indbakke .mails .almafsender i {
+    color: #00b8eb;
+  }
+  .indbakke .mails .almemne {
+    grid-area: almemne;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0.2rem 0;
+  }
+  .indbakke .mails .almdato {
+    grid-area: almdato;
+    margin-bottom: 0.2rem;
+  }
+  .footer {
+    border: 0px;
+    display: none;
+  }
+}
+/*------------------------------- læs mere siden -------------------------------------------*/
+.readmoremain {
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.readmoremain .moreinfo {
+  margin: 0.8rem auto;
+  padding: 0.5rem;
+  width: 375px;
+}
+.readmoremain .moreinfo h1 {
+  font-size: 1.5rem;
+}
+.readmoremain .moreinfo h2 {
+  font-size: 1rem;
+}
+.readmoremain .moreinfo .underoverskrift {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+}
+.readmoremain .moreinfo p {
+  line-height: 1.8rem;
+  padding: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

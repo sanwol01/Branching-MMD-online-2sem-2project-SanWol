@@ -71,7 +71,7 @@ img{
 .resultat{
   @include del.resultatimg;
 }
-/*--------------------------------- fælles for toppen af mailsne-----------------*/
+/*--------------------------------- fælles for toppen af alle mails -----------------*/
 .info{
       margin: 3rem auto;
       padding-bottom: 3rem;
@@ -322,6 +322,10 @@ img{
           width: 70%;
           height: auto;
           margin-left: 1rem;
+        }
+
+        .onlyforphone{
+          display: none;
         }
     }
 
@@ -975,14 +979,17 @@ body{
 .info{
       margin: 3rem auto;
       padding-bottom: 3rem;
-      min-width: 400px;
-      max-width: 800px;
+      min-width: 3750px;
+      max-width: 400px;
       border-bottom: del.$border;
 
         p{
           text-align: left;
         }
     }
+
+
+    
   
     .seMail{
 
@@ -1001,7 +1008,7 @@ body{
 
 
         .mailinfo{
-          margin: 2rem auto 2rem 0.2rem;
+          margin: 1rem auto 1rem 0.1rem;
           display: grid;
           grid-template-columns: 50px 1fr;
           grid-template-rows: 1fr 1fr;
@@ -1010,21 +1017,14 @@ body{
           "ikon tidspunkt";
 
         }
-  
-
      }  
 
-     
-     
 
         .ikon{
           font-size: 1.2rem;
- 
         }
 
        
-
-
     .tekst{
       display: flex;
       flex-direction: row;
@@ -1062,7 +1062,213 @@ body{
         }
     }
 /*------------------------main + scener ---------------------*/
+.indbakke{
+ 
+  max-width: 400px;
+  max-height: 600px;
+  border: 0;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 60px 500px;
+  grid-template-areas:
+  "indbakkeTekst"
+  "logo"
+  "mails";
 
+
+    .indbakkeTekst{
+      grid-area: indbakkeTekst;
+      background-color: del.$bg-color;
+      max-height: 300px;
+      border-bottom: del.$border;
+        p{
+          max-width: 400px;
+          margin: 1.5rem auto;
+        }
+    }
+
+    .logo{
+      grid-area: logo;
+      background-color: del.$bg-color;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border: 0;
+
+        img{
+          width: 50%;
+          height: auto;
+          margin-left: 0.5rem;
+        }
+
+        .onlyforphone{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          color: del.$text-color;
+          font-size: 1rem;
+          font-weight: 700;
+
+            i{
+              color: del.$text-color;
+              margin-left: 0.5rem;
+            }
+          
+        }
+    }
+
+    .mailnav{
+      display:none;
+    }
+
+    .mails{
+      margin-top: 0.5rem;
+      border: 0;
+      grid-area: mails;
+      font-size: 1.2rem;
+      @include del.uls;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+      "glsafsender"
+      "glsemne"
+      "glsdato"
+      "tv2afsender"
+      "tv2emne"
+      "tv2dato"
+      "mofiboafsender"
+      "mofiboemne"
+      "mofibodato"
+      "almafsender"
+      "almemne"
+      "almdato";
+
+          a{
+             @include del.atag;
+          }
+
+          .fed{
+            font-weight: bolder;
+            color: del.$border-color;
+            display: none;
+          }
+
+          .emneafsende{
+            grid-area: emneafsende;
+            display: none;
+          }
+
+          .emneemne{
+            grid-area: emneemne;
+            display: none;
+          }
+
+        
+          .emnedato{
+            grid-area: emnedato;
+            display: none;
+          }
+
+          .glsafsender{
+            grid-area: glsafsender;
+            cursor: pointer;
+            border-top: del.$border;
+            background-color: del.$hover-color;
+          }
+              i{color: del.$gls-color;}
+
+          .glsemne{
+            grid-area: glsemne;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0.2rem 0;
+          }
+
+          .glsdato{
+            grid-area: glsdato;
+            margin-bottom: 0.2rem;
+          }
+
+          .tv2afsender{
+            grid-area: tv2afsender;   
+            background-color: del.$hover-color; 
+            cursor: pointer;
+            border-top: del.$border;
+              i{color: del.$tv2-color;}
+
+          }
+
+          .tv2emne{
+            grid-area: tv2emne;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0.2rem 0;
+          }
+
+          .tv2dato{
+            grid-area: tv2dato;
+            margin-bottom: 0.2rem;
+          }
+
+          .mofiboafsender{
+            grid-area: mofiboafsender;
+            background-color: del.$hover-color;
+            cursor: pointer;
+            border-top: del.$border;
+            
+              i{
+                color: del.$mofibo-color;}
+          }
+
+          .mofiboemne{
+            grid-area: mofiboemne;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0.2rem 0;
+          }
+
+          .mofibodato{
+            grid-area: mofibodato;
+            margin-bottom: 0.2rem;
+          }
+
+          .almafsender{
+            grid-area: almafsender;
+            background-color: del.$hover-color;
+            cursor: pointer;
+            border-top: del.$border;
+              i{color: del.$almbrand-color;}
+          }
+
+          .almemne{
+            grid-area: almemne;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0.2rem 0;}
+
+          .almdato{
+            grid-area: almdato;
+            margin-bottom: 0.2rem;
+          }
+     
+    }
+
+  }
+
+  .footer{
+      border: 0px;
+      display: none;
+  }
+
+
+}
 
 /*------------------------------- læs mere siden -------------------------------------------*/
 
@@ -1104,7 +1310,7 @@ body{
     
   }
 
-}
+
 
 
 

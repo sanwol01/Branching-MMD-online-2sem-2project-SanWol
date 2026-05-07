@@ -1,12 +1,8 @@
-// 1. Vi henter kun de ydre DIV-containere, der har klassen 'scene'
 const alleScener = document.querySelectorAll('div.scene');
 const alleValgKnapper = document.querySelectorAll('.valg');
 const startForfraKnapper = document.querySelectorAll('.start-forfra');
 
-/**
- * Funktion der styrer sceneskift
- * Den fjerner 'aktiv' fra alle scener og tænder den valgte
- */
+/* ----- Funktion der styrer sceneskift, den fjerner 'aktiv' fra alle scener og tænder den valgte ----*/
 function visSceneViaIndex(index) {
     console.log("Prøver at vise scene nr:", index);
 
@@ -15,7 +11,7 @@ function visSceneViaIndex(index) {
         scene.classList.remove('aktiv');
     });
 
-    // Vis den valgte scene, hvis den findes
+    // Vis den valgte scene
     if (alleScener[index]) {
         alleScener[index].classList.add('aktiv');
         window.scrollTo(0, 0); // Rul op til toppen af den nye scene
@@ -24,10 +20,8 @@ function visSceneViaIndex(index) {
     }
 }
 
-/**
- * Event listeners til alle dine valg-knapper (a-tags)
- * Her er din komplette liste over branching ruter:
- */
+/*---------   Event listeners til alle dine valg-knapper (a-tags)-----------*/
+
 alleValgKnapper.forEach((knap, knapIndex) => {
     knap.addEventListener('click', (e) => {
         e.preventDefault();
@@ -52,18 +46,15 @@ alleValgKnapper.forEach((knap, knapIndex) => {
             case 14: visSceneViaIndex(15); break; // Knap 14 -> Scene 15
             case 15: visSceneViaIndex(16); break; // Knap 15 -> Scene 16
             case 16: visSceneViaIndex(17); break; // Knap 16 -> Scene 17
-            case 17: visSceneViaIndex(18); break;
-            case 18: visSceneViaIndex(19); break;
-            case 19: visSceneViaIndex(20); break;
+          
             default:
                 console.warn("Ingen rute defineret for knap index:", knapIndex);
         }
     });
 });
 
-/**
- * Event listeners til alle dine 'start-forfra' knapper
- */
+/*-----------Event listeners til alle 'start-forfra' knapper -------------- */
+
 startForfraKnapper.forEach(knap => {
     knap.addEventListener('click', (e) => {
         e.preventDefault();

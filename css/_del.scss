@@ -72,6 +72,16 @@ $almbrand-font: 'Times New Roman', serif;
     margin: 1.5rem auto;
 }
 
+@mixin resultatimgmobil{
+    max-width: 350px;
+    min-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain;
+    margin: 0.5rem auto;
+}
+
+
 @mixin resultatsection{
   min-width: 200px;
   max-width: 500px;

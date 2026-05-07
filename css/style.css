@@ -970,17 +970,26 @@ img {
   }
   .indexbody main {
     width: 375px;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
   }
   .info {
     margin: 3rem auto;
     padding-bottom: 3rem;
-    min-width: 3750px;
-    max-width: 400px;
+    min-width: 300px;
+    max-width: 375px;
     border-bottom: solid 1px #A4A4A4;
   }
   .info p {
     text-align: left;
+  }
+  .resultat {
+    max-width: 350px;
+    min-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0.5rem auto;
   }
   .seMail {
     max-width: 400px;
@@ -1047,6 +1056,40 @@ img {
     margin: 1rem auto;
   }
   /*------------------------main + scener ---------------------*/
+  /*------------ scene 0--------------*/
+  .velkomst {
+    min-width: 300px;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .velkomst h1 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .velkomst p {
+    line-height: 1.8rem;
+    text-align: left;
+    margin-top: 2rem;
+  }
+  .velkomst a {
+    background-color: #FBFDFF;
+    padding: 0.5rem;
+    border: 2px solid #A4A4A4;
+    border-radius: 5px;
+    color: #0E1A24;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+  }
+  .velkomst a:hover {
+    background-color: #D9D9D9;
+  }
+  .velkomst a {
+    display: block;
+    width: 150px;
+    margin: 2rem auto;
+  }
+  /*------------ scene 1--------------*/
   .indbakke {
     max-width: 400px;
     max-height: 600px;
@@ -1227,34 +1270,283 @@ img {
     grid-area: almdato;
     margin-bottom: 0.2rem;
   }
-  .footer {
-    border: 0px;
-    display: none;
+  /*------------ scene 2 --------------*/
+  .glsmail .mailcontent {
+    background-color: #D9D9D9;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
   }
-}
-/*------------------------------- læs mere siden -------------------------------------------*/
-.readmoremain {
-  width: 100dvw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.readmoremain .moreinfo {
-  margin: 0.8rem auto;
-  padding: 0.5rem;
-  width: 375px;
-}
-.readmoremain .moreinfo h1 {
-  font-size: 1.5rem;
-}
-.readmoremain .moreinfo h2 {
-  font-size: 1rem;
-}
-.readmoremain .moreinfo .underoverskrift {
-  font-size: 1rem;
-  margin: 0.8rem 0;
-}
-.readmoremain .moreinfo p {
-  line-height: 1.8rem;
-  padding: 0.5rem;
+  .glsmail .mailcontent .besked {
+    background-color: #FBFDFF;
+    border-radius: 10px;
+    max-width: 350px;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    flex-direction: column;
+  }
+  .glsmail .mailcontent .besked p {
+    padding: 0.2rem 1rem;
+    text-align: left;
+  }
+  .glsmail .mailcontent .besked .glsboks {
+    margin: 1rem auto;
+    border-radius: 10px;
+  }
+  .glsmail .mailcontent .besked a {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FBFDFF;
+    background-color: #0519b0;
+    padding: 1rem;
+    border-radius: 50px;
+    margin: 1rem auto;
+  }
+  .glsmail .mailcontent .besked ul {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  .glsmail .mailcontent .besked ul li {
+    color: #0519b0;
+    margin-right: 1rem;
+    list-style-type: none;
+  }
+  .glsmail .mailcontent .besked .mailfooter {
+    font-size: 10px;
+    line-height: 0.3rem;
+    font-weight: lighter;
+    color: #A4A4A4;
+    display: block;
+    margin: 0.5rem auto;
+    border-top: solid 1px #A4A4A4;
+  }
+  .glsmail .mailcontent .besked .mailfooter p {
+    text-align: center;
+    white-space: nowrap;
+  }
+  /*------------ scene 6--------------*/
+  .tv2mail .tv2mailcontent {
+    background-color: #FBFDFF;
+    margin-bottom: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .tv2mail .tv2mailcontent h2 {
+    color: #f21b30;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+  .tv2mail .tv2mailcontent h3 {
+    color: #0E1A24;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 1rem auto;
+  }
+  .tv2mail .tv2mailcontent .tv2mailtext {
+    background-color: #f7f9fa;
+    padding: 0.2rem;
+    max-width: 350px;
+    margin: 0.2rem auto 1rem auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .tv2mail .tv2mailcontent .tv2mailtext .tv2budskab {
+    border-top: 0.2px solid #0E1A24;
+    margin-top: 0.5rem;
+    max-width: 350px;
+    padding: 0.2rem;
+  }
+  .tv2mail .tv2mailcontent .tv2mailtext p {
+    padding: 0.2rem 0.5rem;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1rem;
+  }
+  .tv2mail .tv2mailcontent .tv2mailtext a {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FBFDFF;
+    background-color: #f21b30;
+    padding: 0.2rem;
+    border-radius: 5px;
+    margin: 1rem auto;
+    font-weight: bolder;
+  }
+  .tv2mail .tv2mailcontent .tv2mailtext ul {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+  }
+  .tv2mail .tv2mailcontent .tv2mailtext ul li {
+    color: #0519b0;
+    margin-right: 0.5rem;
+    list-style-type: none;
+  }
+  .tv2mail .tv2mailcontent .tv2mailtext .mailfooter {
+    font-size: 10px;
+    line-height: 0.3rem;
+    font-weight: lighter;
+    color: #A4A4A4;
+    display: block;
+    margin: 0.5rem auto;
+    border-top: solid 1px #A4A4A4;
+  }
+  .tv2mail .tv2mailcontent .tv2mailtext .mailfooter p {
+    text-align: center;
+    white-space: nowrap;
+  }
+  /*------------ scene 10--------------*/
+  .mofibomail .mofibomailcontent {
+    background-color: #fffbfa;
+    margin: 0 auto 3rem auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 350px;
+  }
+  .mofibomail .mofibomailcontent .besked {
+    max-width: 350px;
+  }
+  .mofibomail .mofibomailcontent .besked img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mofibomail .mofibomailcontent .besked p {
+    padding: 0.2rem 1rem;
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.2rem;
+  }
+  .mofibomail .mofibomailcontent .besked h2 {
+    color: #ff5e29;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+  }
+  .mofibomail .mofibomailcontent .besked .mofiboknap {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px auto 20px 5px;
+    text-decoration: none;
+    color: #FBFDFF;
+    background-color: #000;
+    padding: 0.6rem;
+    border-radius: 50px;
+    font-weight: bold;
+  }
+  .mofibomail .mofibomailcontent .besked .mofibomailfooter {
+    max-width: 350px;
+    min-height: 40px;
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    background-color: black;
+    display: block;
+    margin: 0.5rem auto;
+  }
+  .mofibomail .mofibomailcontent .besked .mofibomailfooter p {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 8px;
+  }
+  .mofibomail .mofibomailcontent .besked .mofibomailfooter .biggerp {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+  .mofibomail .mofibomailcontent .besked .mofibomailfooter a {
+    text-decoration: underline;
+    color: white;
+  }
+  /*------------ scene 14--------------*/
+  .almbrandmail .almmailcontent {
+    font-family: "Times New Roman", serif;
+    text-align: left;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .almbrandmail .almmailcontent h2 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .almbrandmail .almmailcontent h3 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 1rem;
+  }
+  .almbrandmail .almmailcontent p {
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .almbrandmail .almmailcontent a {
+    text-decoration: none;
+  }
+  .almbrandmail .almmailcontent .playstoreimg {
+    max-height: 3rem;
+    display: block;
+    cursor: pointer;
+  }
+  .almbrandmail .almmailcontent .almlogoimg {
+    max-height: 5rem;
+    display: block;
+    cursor: pointer;
+  }
+  .almbrandmail .almmailcontent .almmailfooter {
+    margin-top: 1rem;
+  }
+  .almbrandmail .almmailcontent .almmailfooter p {
+    font-size: 0.8rem;
+  }
+  /*------------------------------- læs mere siden -------------------------------------------*/
+  .readmoremain {
+    width: 350;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .readmoremain .moreinfo {
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    width: 350px;
+  }
+  .readmoremain .moreinfo h1 {
+    font-size: 1.5rem;
+  }
+  .readmoremain .moreinfo h2 {
+    font-size: 1rem;
+  }
+  .readmoremain .moreinfo .underoverskrift {
+    font-size: 1rem;
+    margin: 0.8rem 0;
+  }
+  .readmoremain .moreinfo p {
+    line-height: 1.8rem;
+    padding: 0.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
